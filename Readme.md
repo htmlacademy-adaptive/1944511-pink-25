@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Игорь Ребрищев](https://up.htmlacademy.ru/adaptive/25/user/1944511).
-* Наставник: `Павел Нюкало`.
+* Наставник: [Павел Нюкало](https://up.htmlacademy.ru/profession/frontender/13/adaptive/25/user/869225).
 
 ---
 
