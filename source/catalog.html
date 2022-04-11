@@ -95,9 +95,9 @@
       <h2 class="visually-hidden">Каталог фотографий с комментариями</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <article class="catalog__article card">
+          <article class="catalog__article card card--base">
             <h3 class="visually-hidden">
-              Описание карточки
+              Пост 1
             </h3>
             <img class="card__img" src="./img/panorama.jpg" alt="Горный пейзаж.">
             <blockquote class="card__blockquote">
@@ -127,7 +127,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 2</h3>
             <img class="card__img" src="./img/photo-1.jpg" alt="Белое авто.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -153,7 +153,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 3</h3>
             <img class="card__img" src="./img/photo-2.jpg" alt="Барабанная установка.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -179,7 +179,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 4</h3>
             <img class="card__img" src="./img/photo-3.jpg" alt="Витраж.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -205,7 +205,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 5</h3>
             <img class="card__img" src="./img/photo-4.jpg" alt="Кубанская бахча.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -231,7 +231,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 6</h3>
             <img class="card__img" src="./img/photo-5.jpg" alt="Вид с вершины.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -257,7 +257,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Описание карточки</h3>
+            <h3 class="visually-hidden">Пост 7</h3>
             <img class="card__img" src="./img/photo-6.jpg" alt="Вид из окна самолета.">
             <blockquote class="card__blockquote">
               <cite class="card__cite">
@@ -282,9 +282,63 @@
           </article>
         </li>
       </ul>
-      <p class="catalog__slogan">
+    </section>
+
+    <!-- Post -->
+    <section class="post">
+      <h2 class="visually-hidden">
+        Запостить ваше фото
+      </h2>
+      <p class="post__slogan">
         Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       </p>
+      <div class="post__edit">
+        <img class="post__image" src="./img/photo-7.jpg" alt="Заснеженая дорога в лесу" >
+        <form  class="post__form form-post" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-post__tools">
+            <div class="form-post__tools-icons">
+              <ul class="form-post__icons-list">
+                <li class="form-post__icons-item">
+                  <label for="crop" class="form-post__label">
+                    <span class="visually-hidden">Обрезать фото.</span>
+                  </label>
+                </li>
+                <li class="form-post__icons-item">
+                  <label for="fill" class="form-post__label">
+                    <span class="visually-hidden">Заливка цветом.</span>
+                  </label>
+                </li>
+                <li class="form-post__icons-item">
+                  <label for="contrast" class="form-post__label">
+                    <span class="visually-hidden">Изменить контраст.</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-post__tools-range">
+              <ul class="form-post__range-list">
+                <li class="form-post__range-item">
+                  <input class="form-post__range" type="range" name="crop" id="crop" min="0" max="100" step="1" value="90">
+                </li>
+                <li class="form-post__range-item">
+                  <input class="form-post__range" type="range" name="fill" id="fill" min="0" max="100" step="1" value="20">
+                </li>
+                <li class="form-post__range-item">
+                  <input class="form-post__range" type="range" name="contrast" id="contrast" min="0" max="100" step="1" value="50">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-post__buttons">
+            <button class="form-post__submit" type="submit">
+              Запостить
+            </button>
+            <button class="form-post__reset" type="reset">
+              Отмена
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
