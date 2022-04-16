@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+// Base
+@import "base/variables.scss";
+@import "base/fonts.scss";
+@import "base/visually-hidden.scss";
+@import "base/common.scss";
+@import "base/mixins.scss";
+@import "base/button.scss";
+@import "base/section-title.scss";
+
+// Header
+@import "blocks/main-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/button-open.scss";
+@import "blocks/button-close.scss";
+
+// Main-index
+@import "blocks/promo.scss";
+@import "blocks/download.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-header.scss";

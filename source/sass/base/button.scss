@@ -1,0 +1,13 @@
+.button {
+  @include link;
+  display: block;
+  min-width: 280px;
+  padding: 21px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  border: 3px solid $light-color;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: $light-color;
+}
