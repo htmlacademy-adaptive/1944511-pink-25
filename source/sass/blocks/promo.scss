@@ -1,12 +1,13 @@
 .promo {
-  min-height: 462px;
   padding-top: 95px;
-  background-image: url("../../img/promo-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: $bg-color-secondary;
+  background-image: url("../../img/promo.png"), url("../../img/promo-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 187px, 0 0;
+  background-size: auto, contain;
 }
 
 .promo__slogan {
   text-align: center;
+  margin-bottom: 320px;
 }

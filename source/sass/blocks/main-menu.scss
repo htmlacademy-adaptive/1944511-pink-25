@@ -1,15 +1,15 @@
 .main-menu {
-  @include list-reset;
+  @include list;
   display: none;
   position: absolute;
   left: 0;
   top: 100%;
   width: 100%;
   text-align: center;
+}
 
-  &--visible {
-    display: block;
-  }
+.main-menu--visible {
+  display: block;
 }
 
 .main-menu__link {

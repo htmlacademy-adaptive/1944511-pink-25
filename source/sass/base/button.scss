@@ -1,13 +1,20 @@
 .button {
-  @include link;
   display: block;
-  min-width: 280px;
+  min-width: 100px;
   padding: 21px;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
-  border: 3px solid $light-color;
+  border-width: 3px;
+  border-style: solid;
   box-sizing: border-box;
   border-radius: 30px;
+}
+
+.button--primary {
+  @include link;
+  width: 100%;
+  max-width: 300px;
+  border-color: $light-color;
   color: $light-color;
 }
