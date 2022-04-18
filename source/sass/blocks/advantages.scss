@@ -1,0 +1,29 @@
+.advantages {
+  padding-top: 46px;
+  text-align: center;
+  background-image: linear-gradient(175deg, transparent 250px, $bg-color-primary 250px);
+}
+
+.advantages__wrap {
+  padding-bottom: 325px;
+  background-image: url("../../img/advantages.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.advantages__slogan {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__slogan--second {
+  margin-bottom: 123px;
+}
+
+.advantages__list {
+  @include list;
+}
+
+.advantages__image-wrap {
+  display: none;
+}
