@@ -22,8 +22,25 @@
 
 .advantages__list {
   @include list;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 43px;
 }
 
 .advantages__image-wrap {
   display: none;
+}
+
+.advantages__lead {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $dark-color;
+}
+
+.advantages__description {
+  margin-top: 0;
+  margin-bottom: 0;
 }

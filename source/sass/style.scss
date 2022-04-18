@@ -5,7 +5,7 @@
 @import "base/common.scss";
 @import "base/mixins.scss";
 @import "base/button.scss";
-@import "base/section-title.scss";
+@import "base/index-title.scss";
 
 // Header
 @import "blocks/main-header.scss";
@@ -16,8 +16,9 @@
 @import "blocks/button-close.scss";
 
 // Main-index
+@import "blocks/slider-pagination.scss";
 @import "blocks/promo.scss";
 @import "blocks/download.scss";
 @import "blocks/markets.scss";
 @import "blocks/advantages.scss";
-@import "blocks/main-header.scss";
+@import "blocks/comments.scss";

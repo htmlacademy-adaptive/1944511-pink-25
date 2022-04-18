@@ -1,0 +1,42 @@
+.comments {
+  padding: 50px 0 60px;
+  text-align: center;
+}
+
+.comments__list {
+  @include list;
+}
+
+.comments__content {
+  margin: 0;
+  padding: 0;
+}
+
+.comments__author {
+  display: inline-block;
+  margin-bottom: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-color;
+}
+
+.comments__info {
+  margin-top: 0;
+  display: none;
+}
+
+.comments__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+.comments__buttons {
+  display: none;
+}
+
+.comments__pagination {
+  margin-top: 44px;
+}
