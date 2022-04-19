@@ -90,6 +90,8 @@
         </div>
       </section>
 
+
+
       <!-- Advantages -->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
@@ -129,7 +131,7 @@
       <!-- Comments -->
       <section class="comments">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="container">
+        <div class="comments__wrap container">
           <ul class="comments__list">
             <li class="comments__item">
               <blockquote class="comments__content">
@@ -189,34 +191,34 @@
 
       <!-- Tariffs -->
       <section class="tariffs">
-        <div class="container">
-          <table class="tariffs-table table">
+        <div class="tariffs__table-wrap">
+          <table class="tariffs__table table">
             <caption class="table__caption">
               <h2 class="visually-hidden">Описание тарифов</h2>
             </caption>
             <thead class="table__header">
               <tr class="table__row table__row-header">
-                <th class="visually-hidden table__cell-head">
+                <th class="visually-hidden table__cell-head  table__cell-head--params">
                   Параметры
                 </th>
                 <th class="table__cell-head">
-                  <span class="table__title">База</span>
-                  <span class="table__price">1,99 USD</span>
+                  <p class="table__title">База</p>
+                  <p class="table__price">1,99 USD</p>
                 </th>
                 <th class="table__cell-head table__cell-head--type-hit">
-                  <span class="table__title">СТАНДАРТ</span>
-                  <span class="table__price">3,99 USD</span>
+                  <p class="table__title">Стандарт</p>
+                  <p class="table__price">3,99 USD</p>
                 </th>
                 <th class="table__cell-head">
-                  <span class="table__title">АНЛИМ</span>
-                  <span class="table__price">9,99 USD</span>
+                  <p class="table__title">Анлим</p>
+                  <p class="table__price">9,99 USD</p>
                 </th>
               </tr>
             </thead>
             <tbody class="table__body">
               <tr class="table__row">
-                <td class="table__cell">
-                  Розовый фильтр
+                <td class="table__cell table__cell--params">
+                  <span class="table__params-base">Розовый фильтр</span>
                 </td>
                 <td class="table__cell">
                   <span class="table__params">Розовый фильтр</span>
@@ -232,8 +234,8 @@
                 </td>
               </tr>
               <tr class="table__row">
-                <td class="table__cell">
-                  Смайлики
+                <td class="table__cell table__cell--params">
+                  <span class="table__params-base">Смайлики</span>
                 </td>
                 <td class="table__cell">
                   <span class="table__params">Смайлики</span>
@@ -249,8 +251,8 @@
                 </td>
               </tr>
               <tr class="table__row">
-                <td class="table__cell">
-                  Комментарии
+                <td class="table__cell table__cell--params">
+                  <span class="table__params-base">Комментарии</span>
                 </td>
                 <td class="table__cell">
                   <span class="table__params">Комментарии</span>
@@ -267,39 +269,37 @@
               </tr>
           </tbody>
           </table>
-          <ol class="tariffs__pagination slider-pagination">
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button">
-                <span class="visually-hidden">База.</span>
-              </button>
-            </li>
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button slider-pagination__button--current" type="button">
-                <span class="visually-hidden">Стандарт.</span>
-              </button>
-            </li>
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button">
-                <span class="visually-hidden">Анлим.</span>
-              </button>
-            </li>
-          </ol>
         </div>
+        <ol class="tariffs__pagination slider-pagination">
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button" type="button">
+              <span class="visually-hidden">База.</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button slider-pagination__button--current" type="button">
+              <span class="visually-hidden">Стандарт.</span>
+            </button>
+          </li>
+          <li class="slider-pagination__item">
+            <button class="slider-pagination__button" type="button">
+              <span class="visually-hidden">Анлим.</span>
+            </button>
+          </li>
+        </ol>
       </section>
 
       <!-- Contacts -->
       <section class="contacts">
-        <h2 class="visually-hidde">Контакты</h2>
-        <div class="container">
-          <p class="contacts__slogan section-title">
-            Остались вопросы? <br>Свяжитесь с нами!
-          </p>
-        </div>
-        <dl class="contacts__list">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__slogan container index-title">
+          Остались вопросы? <br>Свяжитесь с нами!
+        </p>
+        <dl class="contacts__list container">
           <div class="contacts__list-item">
             <dt class="contacts__title">Звоните:</dt>
             <dd class="contacts__value">
-              <a class="tel contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts__text tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
           <div class="contacts__list-item">
@@ -322,7 +322,7 @@
       <!-- Map -->
       <section class="map">
         <h2 class="visually-hidden">Как добраться</h2>
-        <img src="./img/map.jpg" alt="" class="map__image">
+        <img src="./img/map.jpg"  width="100%" alt="" class="map__image">
       </section>
     </main>
 
