@@ -1,0 +1,32 @@
+.intro-catalog {
+  background-color: $middle-color;
+  background-image: url("../../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.intro-catalog__title-wrap {
+  padding-top: 102px;
+  padding-bottom: 84px;
+  min-height: 225px;
+  box-sizing: border-box;
+}
+
+.intro-catalog__title {
+  width: 180px;
+  margin: 0 auto;
+  color: $light-color;
+}
+
+.intro-catalog__info {
+  padding: 54px 0 60px;
+  background-color: $light-color;
+}
+
+.intro-catalog__text {
+  width: 280px;
+  margin: 0 auto;
+  line-height: 30px;
+}
