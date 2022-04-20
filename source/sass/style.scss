@@ -1,6 +1,7 @@
 // Base
 @import "base/variables.scss";
 @import "base/fonts.scss";
+@import "base/container.scss";
 @import "base/visually-hidden.scss";
 @import "base/common.scss";
 @import "base/mixins.scss";
@@ -27,3 +28,15 @@
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
 
+// Footer
+@import "blocks/main-footer.scss";
+@import "blocks/socials.scss";
+
+// Form
+@import "blocks/intro-form.scss";
+@import "blocks/catalog-title.scss";
+@import "blocks/fieldset.scss";
+@import "blocks/form.scss";
+@import "blocks/control.scss";
+@import "blocks/form-button.scss";
+@import "blocks/modal.scss";

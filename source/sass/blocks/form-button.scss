@@ -1,0 +1,16 @@
+.form-button {
+  @include btn;
+  display: block;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $light-color;
+  background-color: $form-btn-color;
+  border: 2px solid $form-btn-color;
+  border-radius: 1px;
+  box-sizing: border-box;
+}

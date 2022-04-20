@@ -1,4 +1,4 @@
-.tariffs{
+.tariffs {
   padding: 100px 0 49px;
   background-color: $bg-color-primary;
   background-image: url("../../img/bg-tariffs.svg");
@@ -17,6 +17,7 @@
   width: 840px;
   margin-left: auto;
   margin-right: auto;
+  transform: translateX(-260px);
 }
 
 .tariffs__pagination {

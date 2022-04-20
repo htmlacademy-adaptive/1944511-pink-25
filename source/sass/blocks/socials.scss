@@ -1,0 +1,18 @@
+.socials {
+  @include list;
+  width: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 54px);
+  column-gap: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socials__link {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: 3px solid rgba($middle-color, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
