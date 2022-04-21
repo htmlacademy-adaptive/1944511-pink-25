@@ -1,0 +1,20 @@
+.page {
+  height: 100%;//прижать футер
+}
+
+.page__body {
+  position: relative;
+  min-width: 320px;
+  min-height: 100%;//прижать футер
+  display: flex;//прижать футер
+  flex-direction: column;//прижать футер
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;//24px
+  font-weight: 400;
+  color: $middle-color;
+  background-color: $light-color;
+}

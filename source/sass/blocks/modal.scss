@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  padding: 44px 0 52px;
+  background-color: $light-color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// Показать окно с ошибкой
+.modal--failure-active {
+  display: block;
+}
+
+// Показать окно отправки данных
+.modal--success-active {
+  display: block;
+}
+
+.modal__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.modal__title {
+  margin-bottom: 37px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $dark-color;
+}
+
+.modal__description {
+  margin-bottom: 50px;
+}
+
+.modal--success {
+  padding-bottom: 0;
+}
+
+.modal--success .modal__description {
+  margin-bottom: 41px;
+}
+
+.modal__button-wrap {
+  padding: 52px 22px;
+  background-color: $bg-color-primary;
+  border-radius: 0 0 1px 1px;
+}
+
+.modal__button {
+  width: 100%;
+}

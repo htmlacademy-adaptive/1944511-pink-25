@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  min-width: 100px;
+  padding: 21px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.button--primary {
+  @include link;
+  width: 100%;
+  max-width: 300px;
+  border-color: $light-color;
+  color: $light-color;
+}
+
+.button--secondary {
+  @include btn;
+  width: 100%;
+  max-width: 280px;
+  color: $base-color;
+  border-color: $base-color;
+}
+
+.button--tertiary {
+  @include btn;
+  width: 100%;
+  max-width: 280px;
+  color: rgba($middle-color, 0.1);
+  border-color: rgba($middle-color, 0.1);
+}

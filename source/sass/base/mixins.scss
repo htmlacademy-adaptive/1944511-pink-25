@@ -1,0 +1,23 @@
+@mixin list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin btn {
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+}
+
+@mixin link {
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}

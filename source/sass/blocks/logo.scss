@@ -1,0 +1,12 @@
+.logo__img {
+  display: none;
+}
+
+.logo--theme-color .logo__img {
+  display: inline-block;
+  fill: $base-color;
+}
+
+.logo--theme-color .logo__text {
+  fill: $middle-color;
+}

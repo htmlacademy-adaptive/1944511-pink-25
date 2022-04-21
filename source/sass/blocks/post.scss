@@ -1,0 +1,22 @@
+.post {
+  padding-top: 49px;
+}
+
+.post__slogan {
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.post__edit {
+  padding: 20px 0 41px;
+  background-color: $bg-color-primary;
+}
+
+.post__image {
+  @include img;
+  margin-bottom: 43px;
+}

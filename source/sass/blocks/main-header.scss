@@ -1,0 +1,21 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 21px 0;
+  background-color: rgba($dark-color, 0.3);
+}
+
+.main-header--active {
+  background-color: $middle-color;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-header__container {
+  display: flex;
+}
+
+.main-header__navigation {
+  margin-right: auto;
+}

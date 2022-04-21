@@ -1,0 +1,7 @@
+.slider-pagination {
+  @include list;
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  column-gap: 19px;
+  justify-content: center;
+}
