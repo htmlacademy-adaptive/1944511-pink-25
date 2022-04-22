@@ -17,4 +17,8 @@
   font-weight: 400;
   color: $middle-color;
   background-color: $light-color;
+
+  @include mq-tablet {
+    background-color: red;
+  }
 }
