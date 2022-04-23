@@ -5,17 +5,36 @@
   width: 100%;
   padding: 21px 0;
   background-color: rgba($dark-color, 0.3);
-}
 
-.main-header--active {
-  background-color: $middle-color;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  &--active {
+    background-color: $middle-color;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @include mq-desktop {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  @include mq-tablet {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 }
 
 .main-header__container {
   display: flex;
+  align-items: center;
 }
 
 .main-header__navigation {
   margin-right: auto;
+
+  @include mq-desktop {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+  }
 }

@@ -1,11 +1,21 @@
 .index-title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 29px;
   color: $middle-color;
   text-align: center;
-}
 
-.index-title--theme-light {
-  color: $light-color;
+  &--theme-light {
+    color: $light-color;
+  }
+
+  @include mq-tablet {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @include mq-desktop {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
