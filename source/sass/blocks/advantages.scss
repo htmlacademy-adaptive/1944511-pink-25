@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 250px;
+
+  @include mq-tablet {
+    background-size: 100% 290px;
+  }
+
+  @include mq-desktop {
+    background-size: 100% 415px;
+  }
 }
 
 .advantages__wrap {
@@ -13,15 +21,37 @@
   background-image: url("../img/advantages.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+
+
+  @include mq-tablet {
+    padding-top: 58px;
+    padding-bottom: 49px;
+    background-image: url("../img/advantages-tablet.png");
+    background-position: left bottom;
+  }
+
+  @include mq-desktop {
+    padding-top: 77px;
+    padding-bottom: 59px;
+    background-image: none;
+  }
 }
 
 .advantages__slogan {
   margin-top: 0;
   margin-bottom: 30px;
-}
 
-.advantages__slogan--second {
-  margin-bottom: 123px;
+  @include mq-tablet {
+    margin-bottom: 5px;
+  }
+
+  &--second {
+    margin-bottom: 123px;
+
+    @include mq-desktop {
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .advantages__list {
@@ -29,10 +59,34 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 43px;
+  box-sizing: border-box;
+
+  @include mq-tablet {
+    width: 310px;
+    margin-left: auto;
+    text-align: left;
+    row-gap: 46px;
+  }
+
+  @include mq-desktop {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    column-gap: 68px;
+  }
 }
 
 .advantages__image-wrap {
   display: none;
+
+  @include mq-desktop {
+    display: block;
+    height: 300px;
+    margin-bottom: 59px;
+    overflow: hidden;
+  }
 }
 
 .advantages__lead {
@@ -42,9 +96,24 @@
   font-weight: 700;
   line-height: 24px;
   color: $dark-color;
+
+  @include mq-tablet {
+    margin-bottom: 24px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description {
   margin-top: 0;
   margin-bottom: 0;
+
+  @include mq-desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

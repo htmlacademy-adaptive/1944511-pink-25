@@ -5,12 +5,28 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 20px;
+
+  @include mq-tablet {
+    padding: 117px 0 70px;
+  }
+
+  @include mq-desktop {
+    padding: 159px 0 98px;
+  }
 }
 
 .tariffs__table-wrap {
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
+
+  @include mq-tablet {
+    width: 620px;
+  }
+
+  @include mq-desktop {
+    width: 940px;
+  }
 }
 
 .tariffs__table {
@@ -18,8 +34,17 @@
   margin-left: auto;
   margin-right: auto;
   transform: translateX(-260px);
+
+  @include mq-tablet {
+    width: 100%;
+    transform: translateX(0);
+  }
 }
 
 .tariffs__pagination {
   margin-top: 45px;
+
+  @include mq-tablet {
+    display: none;
+  }
 }

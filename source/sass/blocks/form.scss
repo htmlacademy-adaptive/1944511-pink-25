@@ -33,11 +33,11 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   box-sizing: border-box;
-}
 
-.form__input::placeholder {
-  font-size: 18px;
-  line-height: 30px;
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .form__advances-wrap {

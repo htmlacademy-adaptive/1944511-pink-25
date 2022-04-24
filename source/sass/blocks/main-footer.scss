@@ -1,14 +1,37 @@
 .main-footer {
   padding: 40px 0;
   text-align: center;
+
+  @include mq-tablet {
+    display: flex;
+    align-items: center;
+    padding: 36px 0;
+  }
+
+  @include mq-desktop {
+    padding: 71px 0;
+  }
 }
 
 .main-footer__logo {
   display: inline-block;
   margin-bottom: 39px;
+
+  @include mq-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__development {
   display: inline-block;
   margin-top: 39px;
+  line-height: 18px;
+
+  @include mq-tablet {
+    margin-top: 0;
+  }
+
+  @include mq-desktop {
+    font-size: 18px;
+  }
 }

@@ -4,6 +4,10 @@
   background-color: transparent;
   border: none;
 
+  @include mq-desktop {
+    display: none;
+  }
+
   // &--visible {
   //   display: block;
 
@@ -11,12 +15,12 @@
   //     display: none;
   //   }
   // }
-
-  @include mq-desktop {
-    display: none;
-  }
 }
 
 .main-header--active .button-close {
   display: block;
+
+  @include mq-desktop {
+    display: none;
+  }
 }

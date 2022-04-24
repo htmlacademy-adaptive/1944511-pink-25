@@ -11,16 +11,20 @@
   border-radius: 1px;
   transform: translate(-50%, -50%);
   text-align: center;
-}
 
-// Показать окно с ошибкой
-.modal--failure-active {
-  display: block;
-}
+  // Показать окно с ошибкой
+  &--failure-active {
+    display: block;
+  }
 
-// Показать окно отправки данных
-.modal--success-active {
-  display: block;
+  &--success {
+    padding-bottom: 0;
+  }
+
+  // Показать окно отправки данных
+  &--success-active {
+    display: block;
+  }
 }
 
 .modal__container {
@@ -38,10 +42,6 @@
 
 .modal__description {
   margin-bottom: 50px;
-}
-
-.modal--success {
-  padding-bottom: 0;
 }
 
 .modal--success .modal__description {

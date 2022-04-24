@@ -5,10 +5,6 @@
   color: $middle-color;
   text-align: center;
 
-  &--theme-light {
-    color: $light-color;
-  }
-
   @include mq-tablet {
     font-size: 40px;
     line-height: 48px;
@@ -17,5 +13,19 @@
   @include mq-desktop {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  &--theme-light {
+    color: $light-color;
+  }
+
+  &--size-large {
+    @include mq-tablet {
+      line-height: 58px;
+    }
+
+    @include mq-desktop {
+      line-height: 68px;
+    }
   }
 }
