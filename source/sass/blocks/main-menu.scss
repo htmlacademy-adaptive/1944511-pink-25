@@ -15,14 +15,6 @@
   }
 }
 
-.main-header--active .main-menu {
-  display: block;
-
-  @include mq-desktop {
-    display: flex;
-  }
-}
-
 // .main-menu--visible {
 //   display: block;
 // }
@@ -42,15 +34,5 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
-  }
-}
-
-.main-header--active .main-menu__link {
-  background-color: $middle-color;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-
-  @include mq-desktop {
-    background-color: transparent;
-    box-shadow: none;
   }
 }

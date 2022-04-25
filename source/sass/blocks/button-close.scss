@@ -16,11 +16,3 @@
   //   }
   // }
 }
-
-.main-header--active .button-close {
-  display: block;
-
-  @include mq-desktop {
-    display: none;
-  }
-}

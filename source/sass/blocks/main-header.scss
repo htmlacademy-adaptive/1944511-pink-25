@@ -22,6 +22,36 @@
   }
 }
 
+.main-header--active .main-header__button-open {
+  display: none;
+}
+
+.main-header--active .main-header__button-close {
+  display: block;
+
+  @include mq-desktop {
+    display: none;
+  }
+}
+
+.main-header--active .main-header__menu {
+  display: block;
+
+  @include mq-desktop {
+    display: flex;
+  }
+}
+
+.main-header--active .main-menu__link {
+  background-color: $middle-color;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @include mq-desktop {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
 .main-header__container {
   display: flex;
   align-items: center;
