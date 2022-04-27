@@ -1,18 +1,37 @@
-.download {
-  padding: 28px 0 38px;
-  background-color: $bg-color-secondary;
-}
-
 .download__link {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
+
+  @include mq-tablet {
+    margin-bottom: 46px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 67px;
+  }
 }
 
 .download__list {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
+  outline: 1px solid #ffffff;
+
+  @include mq-tablet {
+    margin-bottom: 38px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 58px;
+  }
 }
 
 .download__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
   text-align: center;
   color: $light-color;
-  line-height: 1.71;
+  line-height: 24px;
+
+  @include mq-tablet {
+    font-size: 18px;
+  }
 }

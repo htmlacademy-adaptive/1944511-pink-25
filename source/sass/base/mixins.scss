@@ -21,3 +21,15 @@
   max-width: 100%;
   object-fit: contain;
 }
+
+@mixin mq-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

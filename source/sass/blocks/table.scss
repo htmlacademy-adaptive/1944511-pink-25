@@ -3,12 +3,31 @@
   border-collapse: collapse;
 }
 
-.table__cell--params {
-  display: none;
-}
+.table__cell {
+  padding: 19px 17px 19px 20px;
+  border: 2px solid #e5e5e5;
 
-.table__cell-head--params {
-  display: none;
+  @include mq-tablet {
+    padding: 12px;
+  }
+
+  @include mq-tablet {
+    padding: 19px;
+  }
+
+  &--params {
+    display: none;
+    text-align-last: left;
+
+    @include mq-tablet {
+      display: table-cell;
+      padding: 18px 15px;
+    }
+
+    @include mq-desktop {
+      padding: 23px;
+    }
+  }
 }
 
 .table__cell-head {
@@ -18,6 +37,26 @@
   color: $light-color;
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
+  box-sizing: border-box;
+
+  @include mq-tablet {
+    width: 25%;
+    padding: 20px 20px 16px;
+  }
+
+  @include mq-desktop {
+    padding: 23px 23px 25px;
+  }
+
+  &--params {
+    display: none;
+
+    @include mq-tablet {
+      display: block;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
 }
 
 .table__title {
@@ -26,6 +65,10 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @include mq-tablet {
+    font-size: 18px;
+  }
 }
 
 .table__price {
@@ -34,15 +77,25 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-}
 
-.table__cell {
-  padding: 20px;
-  border: 2px solid #e5e5e5;
+  @include mq-desktop {
+    font-size: 24px;
+  }
 }
 
 .table__params {
-  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+
+  @include mq-tablet {
+    display: none;
+  }
+}
+
+.table__params-base {
+  line-height: 30px;
+
+  @include mq-desktop {
+    font-size: 18px;
+  }
 }

@@ -1,3 +1,14 @@
-.button-open--hidden {
-  display: none;
+.button-open {
+  @include btn;
+  align-self: end;
+  background-color: transparent;
+  border: none;
+
+  @include mq-desktop {
+    display: none;
+  }
+
+  // &--hidden {
+  //   display: none;
+  // }
 }

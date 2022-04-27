@@ -1,5 +1,15 @@
+.logo {
+  display: flex;
+  align-items: end;
+}
+
 .logo__img {
   display: none;
+  margin-right: 11px;
+
+  @include mq-tablet {
+    display: inline-block;
+  }
 }
 
 .logo--theme-color .logo__img {

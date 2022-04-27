@@ -9,28 +9,28 @@
   border-style: solid;
   box-sizing: border-box;
   border-radius: 30px;
-}
 
-.button--primary {
-  @include link;
-  width: 100%;
-  max-width: 300px;
-  border-color: $light-color;
-  color: $light-color;
-}
+  &--primary {
+    @include link;
+    width: 100%;
+    max-width: 300px;
+    border-color: $light-color;
+    color: $light-color;
+  }
 
-.button--secondary {
-  @include btn;
-  width: 100%;
-  max-width: 280px;
-  color: $base-color;
-  border-color: $base-color;
-}
+  &--secondary {
+    @include btn;
+    width: 100%;
+    max-width: 280px;
+    color: $base-color;
+    border-color: $base-color;
+  }
 
-.button--tertiary {
-  @include btn;
-  width: 100%;
-  max-width: 280px;
-  color: rgba($middle-color, 0.1);
-  border-color: rgba($middle-color, 0.1);
+  &--tertiary {
+    @include btn;
+    width: 100%;
+    max-width: 280px;
+    color: rgba($middle-color, 0.1);
+    border-color: rgba($middle-color, 0.1);
+  }
 }

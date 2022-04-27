@@ -1,13 +1,45 @@
 .promo {
-  padding-top: 95px;
   background-color: $bg-color-secondary;
-  background-image: url("../img/promo.png"), url("../img/promo-bg.jpg");
+  background-image: linear-gradient(to bottom, transparent 473px, $bg-color-secondary 473px), url("../img/promo.png"), url("../img/bg-promo.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 187px, center;
-  background-size: auto, cover;
+  background-position: 0 0, 50% 187px, center;
+  background-size: auto, auto, cover;
+
+  @include mq-tablet {
+    background-image: url("../img/promo-tablet.png"), url("../img/bg-promo-tablet.jpg");
+    background-position: center bottom, center;
+    background-size: auto, cover;
+  }
+
+  @include mq-desktop {
+    background-image: url("../img/promo-desktop.png"), url("../img/bg-promo-desktop.jpg");
+    background-position: right bottom, center;
+    background-size: auto, cover;
+  }
+}
+
+.promo__content {
+  padding: 95px 0 38px;
+
+  @include mq-tablet {
+    padding: 212px 320px 118px 0;
+  }
+
+  @include mq-desktop {
+    padding: 224px 640px 130px 0;
+  }
 }
 
 .promo__slogan {
+  margin-top: 0;
+  margin-bottom: 348px;
   text-align: center;
-  margin-bottom: 320px;
+
+  @include mq-tablet {
+    margin-bottom: 39px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 51px;
+  }
 }

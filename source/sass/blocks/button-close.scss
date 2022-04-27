@@ -1,7 +1,18 @@
 .button-close {
+  @include btn;
   display: none;
-}
+  background-color: transparent;
+  border: none;
 
-.button-close--visible {
-  display: block;
+  @include mq-desktop {
+    display: none;
+  }
+
+  // &--visible {
+  //   display: block;
+
+  //   @include mq-desktop {
+  //     display: none;
+  //   }
+  // }
 }
