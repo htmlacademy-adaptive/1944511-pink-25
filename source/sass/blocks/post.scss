@@ -1,5 +1,13 @@
 .post {
   padding-top: 49px;
+
+  @include mq-tablet {
+    padding-top: 73px;
+  }
+
+  @include mq-desktop {
+    padding-top: 67px;
+  }
 }
 
 .post__slogan {
@@ -8,15 +16,42 @@
   margin-bottom: 52px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 30px;
   text-align: center;
+
+  @include mq-tablet {
+    width: 422px;
+    font-size: 18px;
+    margin-bottom: 78px;
+  }
 }
 
 .post__edit {
   padding: 20px 0 41px;
   background-color: $bg-color-primary;
+
+  @include mq-tablet {
+    padding: 57px 0 54px;
+  }
+}
+
+.post__container {
+  @include mq-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include mq-desktop {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
 }
 
 .post__image {
   @include img;
   margin-bottom: 43px;
+
+  @include mq-tablet {
+    margin-bottom: 0;
+  }
 }

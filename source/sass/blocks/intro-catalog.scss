@@ -1,10 +1,18 @@
 .intro-catalog {
   background-color: $middle-color;
-  background-image: url("../img/promo-bg.jpg");
+  background-image: url("../img/bg-promo.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
   background-size: cover;
   text-align: center;
+
+  @include mq-tablet {
+    background-image: url("../img/bg-promo-tablet.jpg");
+  }
+
+  @include mq-desktop {
+    background-image: url("../img/bg-promo-desktop.jpg");
+  }
 }
 
 .intro-catalog__title-wrap {
@@ -12,21 +20,52 @@
   padding-bottom: 84px;
   min-height: 225px;
   box-sizing: border-box;
+
+  @include mq-tablet {
+    padding-top: 191px;
+    padding-bottom: 143px;
+  }
+
+  @include mq-desktop {
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
 }
 
 .intro-catalog__title {
   width: 180px;
   margin: 0 auto;
   color: $light-color;
+
+  @include mq-tablet {
+    width: 358px;
+  }
 }
 
 .intro-catalog__info {
   padding: 54px 0 60px;
   background-color: $light-color;
+
+  @include mq-tablet {
+    padding: 100px 0 85px;
+  }
+
+  @include mq-desktop {
+    padding-bottom: 97px;
+  }
 }
 
 .intro-catalog__text {
   width: 280px;
   margin: 0 auto;
   line-height: 30px;
+
+  @include mq-tablet {
+    width: 440px;
+    font-size: 18px;
+  }
+
+  @include mq-desktop {
+    width: 575px;
+  }
 }

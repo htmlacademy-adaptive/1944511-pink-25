@@ -1,19 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .card__img {
   @include img;
   width: 100%;
 }
 
 .card__blockquote {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 25px 10px 25px 17px;
   background-color: $bg-color-primary;
   box-sizing: border-box;
+
+  @include mq-tablet {
+    padding: 30px;
+  }
 }
 
 .card--base .card__blockquote {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq-tablet {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include mq-desktop {
+    width: 940px;
+  }
 }
 
 .card__cite {
@@ -31,4 +55,23 @@
 .card__comment {
   margin-top: 14px;
   margin-bottom: 25px;
+}
+
+.card--base .card__comment {
+  @include mq-tablet {
+    order: 4;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+}
+
+.card__like {
+  margin-top: auto;
+}
+
+.card--base .card__like {
+  @include mq-tablet {
+    order: 3;
+    margin-left: auto;
+  }
 }
