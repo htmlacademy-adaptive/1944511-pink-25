@@ -2,8 +2,8 @@
   background-color: $bg-color-secondary;
   background-image: linear-gradient(to bottom, transparent 473px, $bg-color-secondary 473px), url("../img/promo.png"), url("../img/bg-promo.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, 50% 187px, center;
-  background-size: auto, auto, cover;
+  background-position: 0 0, 50% 187px, 0 0;
+  background-size: auto, auto, 100% auto;
 
   @include mq-tablet {
     background-image: url("../img/promo-tablet.png"), url("../img/bg-promo-tablet.jpg");

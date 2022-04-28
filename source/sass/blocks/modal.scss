@@ -12,6 +12,15 @@
   transform: translate(-50%, -50%);
   text-align: center;
 
+  @include mq-tablet {
+    width: 460px;
+    padding: 49px 0 54px;
+  }
+
+  @include mq-desktop {
+    width: 780px;
+  }
+
   // Показать окно с ошибкой
   &--failure-active {
     display: block;
@@ -30,30 +39,85 @@
 .modal__container {
   width: 280px;
   margin: 0 auto;
+
+  @include mq-tablet {
+    width: 350px;
+  }
 }
 
 .modal__title {
-  margin-bottom: 37px;
+  margin: 0 auto 37px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: $dark-color;
+  text-align: center;
+
+  @include mq-tablet {
+    width: 240px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @include mq-desktop {
+    width: 100%;
+  }
 }
 
 .modal__description {
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+
+  @include mq-tablet {
+    width: 320px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  @include mq-desktop {
+    width: 100%;
+    margin-bottom: 68px;
+  }
 }
 
 .modal--success .modal__description {
   margin-bottom: 41px;
+
+  @include mq-tablet {
+    margin-bottom: 35px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 44px;
+  }
+}
+
+.modal--success .modal__container {
+  @include mq-tablet {
+    width: 378px;
+  }
+
+  @include mq-desktop {
+    width: 456px;
+  }
 }
 
 .modal__button-wrap {
-  padding: 52px 22px;
+  padding: 52px 0;
   background-color: $bg-color-primary;
   border-radius: 0 0 1px 1px;
 }
 
 .modal__button {
   width: 100%;
+  margin: 0 auto;
+
+  @include mq-tablet {
+    width: 296px;
+  }
+}
+
+.modal--success .modal__button {
+  @include mq-desktop {
+    width: 456px;
+  }
 }

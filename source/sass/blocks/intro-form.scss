@@ -1,17 +1,35 @@
 .intro-form {
   background-color: $middle-color;
-  background-image: url("../img/promo-bg.jpg");
+  background-image: url("../img/bg-promo.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
   background-size: cover;
   text-align: center;
+
+  @include mq-tablet {
+    background-image: url("../img/bg-promo-tablet.jpg");
+  }
+
+  @include mq-desktop {
+    background-image: url("../img/bg-promo-desktop.jpg");
+  }
 }
 
 .intro-form__title-wrap {
   padding-top: 102px;
-  padding-bottom: 30px;
+  padding-bottom: 51px;
   min-height: 225px;
   box-sizing: border-box;
+
+  @include mq-tablet {
+    padding-top: 191px;
+    padding-bottom: 74px;
+  }
+
+  @include mq-tablet {
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
 }
 
 .intro-form__title {
@@ -23,8 +41,34 @@
 .intro-form__info {
   padding: 54px 0;
   background-color: $light-color;
+
+  @include mq-tablet {
+    padding: 100px 0 82px;
+  }
 }
 
-.info-form__text {
+.intro-form__text {
   line-height: 30px;
+  box-sizing: border-box;
+
+  @include mq-tablet {
+    width: 490px;
+    font-size: 18px;
+  }
+
+  @include mq-desktop {
+    width: 756px;
+  }
+}
+
+.intro-form__text-second {
+  display: none;
+
+  @include mq-tablet {
+    display: block;
+  }
+
+  @include mq-desktop {
+    display: inline-block;
+  }
 }
