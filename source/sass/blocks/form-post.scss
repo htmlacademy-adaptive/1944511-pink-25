@@ -28,6 +28,10 @@
   }
 }
 
+.form-post__tools-range {
+  flex-grow: 1;
+}
+
 .form-post__icons-list {
   display: flex;
   width: 194px;
@@ -41,7 +45,7 @@
     width: 24px;
   }
 
-  @include mq-tablet {
+  @include mq-desktop {
     width: 58px;
   }
 }
@@ -57,7 +61,7 @@
     height: 22px;
   }
 
-  @include mq-tablet {
+  @include mq-desktop {
     width: 48px;
     height: 44px;
   }
@@ -65,14 +69,23 @@
 
 .form-post__range-list {
   @include list;
-  width: 240px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .form-post__range {
-  width: 100%;
+  width: 240px;
   box-sizing: border-box;
+
+  @include mq-tablet {
+    width: 202px;
+  }
+
+  @include mq-desktop {
+    width: 288px;
+  }
 }
 
 .form-post__buttons {
