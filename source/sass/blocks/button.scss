@@ -20,7 +20,6 @@
 
   &--secondary {
     @include btn;
-    width: 100%;
     max-width: 280px;
     color: $base-color;
     border-color: $base-color;
@@ -28,7 +27,6 @@
 
   &--tertiary {
     @include btn;
-    width: 100%;
     max-width: 280px;
     color: rgba($middle-color, 0.1);
     border-color: rgba($middle-color, 0.1);

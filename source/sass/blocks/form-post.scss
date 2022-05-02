@@ -1,9 +1,35 @@
+.form-post {
+  display: flex;
+  flex-direction: column;
+
+  @include mq-tablet {
+    width: 275px;
+  }
+
+  @include mq-desktop {
+    width: 410px;
+  }
+}
+
 .form-post__tools {
-  margin-bottom: 66px;
+  margin-bottom: 38px;
+
+  @include mq-tablet {
+    display: flex;
+    margin-bottom: auto;
+  }
 }
 
 .form-post__tools-icons {
   margin-bottom: 40px;
+
+  @include mq-tablet {
+    margin-bottom: 0;
+  }
+}
+
+.form-post__tools-range {
+  flex-grow: 1;
 }
 
 .form-post__icons-list {
@@ -13,6 +39,15 @@
   padding: 0;
   list-style-type: none;
   justify-content: space-between;
+
+  @include mq-tablet {
+    flex-direction: column;
+    width: 24px;
+  }
+
+  @include mq-desktop {
+    width: 58px;
+  }
 }
 
 .form-post__label {
@@ -20,19 +55,69 @@
   width: 48px;
   height: 44px;
   outline: 1px solid #ffffff;
+
+  @include mq-tablet {
+    width: 24px;
+    height: 22px;
+  }
+
+  @include mq-desktop {
+    width: 48px;
+    height: 44px;
+  }
 }
 
 .form-post__range-list {
   @include list;
-  width: 240px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .form-post__range {
-  width: 100%;
+  width: 240px;
+  box-sizing: border-box;
+
+  @include mq-tablet {
+    width: 202px;
+  }
+
+  @include mq-desktop {
+    width: 288px;
+  }
+}
+
+.form-post__buttons {
+  @include mq-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-post__submit {
+  width: 100%;
   margin-bottom: 12px;
+
+  @include mq-tablet {
+    width: 260px;
+  }
+
+  @include mq-desktop {
+    width: 183px;
+    margin-bottom: 0;
+  }
+}
+
+.form-post__reset {
+  width: 100%;
+
+  @include mq-tablet {
+    width: 260px;
+  }
+
+  @include mq-desktop {
+    width: 183px;
+    margin-left: auto;
+  }
 }

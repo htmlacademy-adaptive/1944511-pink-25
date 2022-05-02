@@ -79,7 +79,7 @@
         </h1>
       </div>
       <div class="intro-form__info">
-        <p class="intro-form__text container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="intro-form__text container"><span class="intro-form__text-first">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</span> <span class="intro-form__text-second">Пожалуйста, заполните форму ниже:</span></p>
       </div>
     </section>
 
@@ -89,7 +89,7 @@
         Форма обратной связи
       </h2>
       <form class="base__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__user fieldset">
+        <fieldset class="form__user fieldset fieldset--unbordered">
           <legend class="visually-hidden">
             Ваши фамилия, имя и отчество
           </legend>
@@ -177,19 +177,19 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="form__contacts fieldset">
-          <legend class="visually-hidden">
-            Ваши контакты
+        <fieldset class="form__contacts fieldset fieldset--unbordered">
+          <legend class="form__legend form__legend--contacts">
+            Контактная информация
           </legend>
           <ul class="form__contacts-list">
             <li class="form__contacts-item">
-              <label class="form__label-primary" for="tel">
+              <label class="form__label-primary form__label-primary--contacts" for="tel">
                 Номер телефона
               </label>
               <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
             </li>
-            <li class="form__user-item">
-              <label class="form__label-primary" for="email">
+            <li class="form__contacts-item">
+              <label class="form__label-primary form__label-primary--contacts" for="email">
                 Адрес почты
               </label>
               <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
@@ -198,7 +198,7 @@
         </fieldset>
         <div class="form__apps-wrap">
           <fieldset class="form__apps fieldset">
-            <legend class="form__legend form__legend--indent-one">
+            <legend class="form__legend">
               С каким приложением путешествовали?
             </legend>
             <ul class="form__apps-list">
@@ -234,7 +234,7 @@
         </div>
         <div class="form__emotions-wrap">
           <fieldset class="form__emotions fieldset">
-            <legend class="form__legend form__legend--indent-two">
+            <legend class="form__legend form__legend--emotions">
               Опишите свои эмоции
             </legend>
             <textarea class="form__input form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
