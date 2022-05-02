@@ -1,3 +1,35 @@
 .markets {
-  // @include list;
+  @include list;
+  display: grid;
+  grid-template-columns: repeat(3, 47px);
+  width: 204px;
+  column-gap: 31.5px;
+  row-gap: 10px;
+  box-sizing: border-box;
+}
+
+.markets__item {
+  width: 47px;
+  height: 56px;
+  box-sizing: border-box;
+}
+
+.markets__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--theme-android {
+    background-image: url("../img/android-logo.svg");
+  }
+
+  &--theme-apple {
+    background-image: url("../img/apple-logo.svg");
+  }
+
+  &--theme-microsoft {
+    background-image: url("../img/microsoft-logo.svg");
+  }
 }

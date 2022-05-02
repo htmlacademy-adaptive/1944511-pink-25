@@ -58,4 +58,12 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  &:hover {
+    color: $middle-color;
+  }
+
+  &:active {
+    color: rgba($middle-color, 0.3);
+  }
 }

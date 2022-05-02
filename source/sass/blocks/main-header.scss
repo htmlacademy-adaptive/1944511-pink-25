@@ -11,7 +11,8 @@
     padding-bottom: 43px;
   }
 
-  &--active {
+  &--active,
+  &--no-js {
     background-color: $middle-color;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
@@ -22,7 +23,8 @@
   }
 }
 
-.main-header--active .main-header__button-open {
+.main-header--active .main-header__button-open,
+.main-header--no-js .main-header__button-open {
   display: none;
 }
 
@@ -34,7 +36,12 @@
   }
 }
 
-.main-header--active .main-header__menu {
+.main-header--no-js .main-header__button-close {
+  display: none;
+}
+
+.main-header--active .main-header__menu,
+.main-header--no-js .main-header__menu {
   display: block;
 
   @include mq-desktop {
@@ -42,7 +49,8 @@
   }
 }
 
-.main-header--active .main-menu__link {
+.main-header--active .main-menu__link,
+.main-header--no-js .main-menu__link {
   background-color: $middle-color;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 

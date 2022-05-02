@@ -16,6 +16,15 @@
     max-width: 300px;
     border-color: $light-color;
     color: $light-color;
+
+    &:hover {
+      background-color: $light-color;
+      color: $base-color;
+    }
+
+    &:active {
+      color: rgba($base-color, 0.3);
+    }
   }
 
   &--secondary {
@@ -23,12 +32,33 @@
     max-width: 280px;
     color: $base-color;
     border-color: $base-color;
+
+    &:hover {
+      background-color: $base-color;
+      color: $light-color;
+    }
+
+    &:active {
+      color: rgba($light-color, 0.3);
+    }
   }
 
   &--tertiary {
     @include btn;
     max-width: 280px;
+    background-color: transparent;
     color: rgba($middle-color, 0.1);
     border-color: rgba($middle-color, 0.1);
+
+    &:hover {
+      color: rgba($middle-color, 0.3);
+      border-color: rgba($middle-color, 0.3);
+    }
+
+    &:active {
+      background-color: rgba($middle-color, 0.3);
+      border-color: rgba($middle-color, 0.3);
+      color: rgba($light-color, 0.3);
+    }
   }
 }

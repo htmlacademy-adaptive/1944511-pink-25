@@ -1,0 +1,15 @@
+.slider-button {
+  @include btn;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0;
+
+  &:hover .slider-button__img {
+    opacity: 0.6;
+  }
+
+  &:active .slider-button__img {
+    opacity: 0.1;
+  }
+}

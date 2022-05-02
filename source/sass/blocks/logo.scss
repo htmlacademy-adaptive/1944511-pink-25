@@ -1,22 +1,62 @@
 .logo {
   display: flex;
   align-items: end;
+
+  &:hover .logo__img,
+  &:hover .logo__text {
+    fill: $base-color;
+  }
+
+  &:active .logo__img,
+  &:active .logo__text {
+    fill: rgba($light-color, 0.3);
+  }
 }
 
 .logo__img {
   display: none;
   margin-right: 11px;
 
-  @include mq-tablet {
+  @include mq-desktop {
+    display: inline-block;
+  }
+
+  &--tablet {
+    @include mq-tablet {
+      display: inline-block;
+    }
+
+    @include mq-desktop {
+      display: none;
+    }
+  }
+}
+
+.logo--theme-color .logo__img--tablet {
+  display: inline-block;
+  fill: $base-color;
+
+  @include mq-desktop {
+    display: none;
+  }
+}
+
+.logo__star {
+  display: none;
+
+  @include mq-desktop {
     display: inline-block;
   }
 }
 
-.logo--theme-color .logo__img {
-  display: inline-block;
+.logo--theme-color:hover .logo__text {
   fill: $base-color;
 }
 
-.logo--theme-color .logo__text {
-  fill: $middle-color;
+.logo--theme-color:active .logo__text {
+  fill: rgba($middle-color, 0.3);
+}
+
+.logo--theme-color:active .logo__img {
+  fill: rgba($base-color, 0.3);
 }

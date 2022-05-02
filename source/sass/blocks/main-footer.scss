@@ -1,10 +1,11 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 0;
-  text-align: center;
 
   @include mq-tablet {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     padding: 36px 0;
   }
 
@@ -23,7 +24,8 @@
 }
 
 .main-footer__development {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-top: 39px;
   line-height: 18px;
 
@@ -33,5 +35,17 @@
 
   @include mq-desktop {
     font-size: 18px;
+  }
+}
+
+.main-footer__academy-link {
+  margin-left: 15px;
+
+  &:hover .main-footer__academy-logo {
+    fill: $middle-color;
+  }
+
+  &:active .main-footer__academy-logo {
+    fill: rgba($middle-color, 0.3);
   }
 }
