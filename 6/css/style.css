@@ -2001,6 +2001,10 @@
   }
 }
 
+.form-post__tools-range {
+  flex-grow: 1;
+}
+
 .form-post__icons-list {
   display: flex;
   width: 194px;
@@ -2015,7 +2019,7 @@
     width: 24px;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .form-post__icons-list {
     width: 58px;
   }
@@ -2033,7 +2037,7 @@
     height: 22px;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .form-post__label {
     width: 48px;
     height: 44px;
@@ -2045,14 +2049,25 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  width: 240px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .form-post__range {
-  width: 100%;
+  width: 240px;
   box-sizing: border-box;
+}
+@media (min-width: 660px) {
+  .form-post__range {
+    width: 202px;
+  }
+}
+@media (min-width: 1200px) {
+  .form-post__range {
+    width: 288px;
+  }
 }
 
 @media (min-width: 1200px) {
