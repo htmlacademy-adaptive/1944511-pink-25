@@ -69,7 +69,7 @@
   }
 }
 
-.main-menu__link---current::after {
+.main-menu__link--current::after {
   @include mq-desktop {
     position: absolute;
     bottom: 0;

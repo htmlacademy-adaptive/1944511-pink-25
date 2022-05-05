@@ -70,8 +70,6 @@
 
   @include mq-desktop {
     width: 100%;
-    // padding-left: 24px;
-    // padding-right: 24px;
     grid-template-columns: repeat(3, 300px);
     text-align: center;
     column-gap: 20px;
