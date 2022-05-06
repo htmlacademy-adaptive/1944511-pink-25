@@ -131,7 +131,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="one" checked>
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Сделал селфи с акулой
                   </span>
@@ -140,7 +140,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="two" checked>
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Обгорел на пляже
                   </span>
@@ -149,7 +149,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="three">
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Видел Чака Норриса
                   </span>
@@ -158,7 +158,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="for">
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Накупил сувениров
                   </span>
@@ -167,7 +167,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="five" checked>
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Удержал башню
                   </span>
@@ -176,7 +176,7 @@
               <li class="form__advances-item">
                 <label class="form__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="advances" value="six">
-                  <span class="control__mark"></span>
+                  <span class="control__mark-checkbox"></span>
                   <span class="control__label">
                     Разгромил отель
                   </span>
@@ -194,13 +194,17 @@
               <label class="form__label-primary form__label-primary--contacts" for="tel">
                 Номер телефона
               </label>
-              <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              <div class="form__input-wrap form__input-wrap--theme-tel">
+                <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              </div>
             </li>
             <li class="form__contacts-item">
               <label class="form__label-primary form__label-primary--contacts" for="email">
                 Адрес почты
               </label>
-              <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              <div class="form__input-wrap form__input-wrap--theme-mail">
+                <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -213,7 +217,7 @@
               <li class="form__apps-item">
                 <label class="form__control control control--type-radio">
                   <input class="visually-hidden control__input" type="radio" name="apps" value="ios" checked>
-                  <span class="control__mark"></span>
+                  <span class="control__mark-radio"></span>
                   <span class="control__label">
                     Pink для iOS
                   </span>
@@ -222,7 +226,7 @@
               <li class="form__apps-item">
                 <label class="form__control control control--type-radio">
                   <input class="visually-hidden control__input" type="radio" name="apps" value="android">
-                  <span class="control__mark"></span>
+                  <span class="control__mark-radio"></span>
                   <span class="control__label">
                     Pink на Android
                   </span>
@@ -231,7 +235,7 @@
               <li class="form__apps-item">
                 <label class="form__control control control--type-radio">
                   <input class="visually-hidden control__input" type="radio" name="apps" value="phone">
-                  <span class="control__mark"></span>
+                  <span class="control__mark-radio"></span>
                   <span class="control__label">
                     Windows Phone
                   </span>
