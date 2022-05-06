@@ -8,11 +8,11 @@
     display: none;
   }
 
-  // &--visible {
-  //   display: block;
+  &:hover .button-close__image {
+    fill: $base-color;
+  }
 
-  //   @include mq-desktop {
-  //     display: none;
-  //   }
-  // }
+  &:active .button-close__image {
+    fill: rgba($base-color, 0.3);
+  }
 }

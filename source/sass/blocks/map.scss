@@ -1,5 +1,14 @@
 .map {
   position: relative;
+  height: 200px;
+
+  @include mq-tablet {
+    height: 374px;
+  }
+
+  @include mq-desktop {
+    height: 502px;
+  }
 }
 
 .map::before {
@@ -11,4 +20,10 @@
   display: block;
   content: "";
   background-image: url("../img/bg-map.svg");
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }

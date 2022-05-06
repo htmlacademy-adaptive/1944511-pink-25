@@ -1,3 +1,9 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .download__link {
   margin-bottom: 37px;
 
@@ -12,7 +18,6 @@
 
 .download__list {
   margin-bottom: 28px;
-  outline: 1px solid #ffffff;
 
   @include mq-tablet {
     margin-bottom: 38px;

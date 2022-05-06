@@ -5,3 +5,32 @@
   column-gap: 19px;
   justify-content: center;
 }
+
+.slider-pagination__button {
+  @include btn;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgba($middle-color, 0.3);
+  background-clip: content-box;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: rgba($middle-color, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($middle-color, 0.1);
+  }
+
+
+  &--current {
+    border-color: $middle-color;
+    background-color: transparent;
+  }
+}

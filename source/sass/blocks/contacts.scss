@@ -82,4 +82,16 @@
   line-height: 33px;
   color: $base-color;
   text-decoration: none;
+
+  &--interactive {
+    &:hover {
+      color: $middle-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba($middle-color, 0.3);
+      text-decoration: none;
+    }
+  }
 }

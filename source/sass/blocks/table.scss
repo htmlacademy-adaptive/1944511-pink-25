@@ -57,6 +57,32 @@
       border-color: transparent;
     }
   }
+
+  &--type-hit {
+    position: relative;
+  }
+}
+
+.table__cell-head--type-hit::before {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 3;
+  content: "";
+  display: block;
+  width: 74px;
+  height: 74px;
+  background-image: url("../img/tariffs-heat.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @include mq-tablet {
+    background-size: 61px 61px;
+  }
+
+  @include mq-desktop {
+    background-size: 74px 74px;
+  }
 }
 
 .table__title {
@@ -83,12 +109,40 @@
   }
 }
 
+.table__cell-content {
+  display: flex;
+  align-items: center;
+
+  @include mq-tablet {
+    justify-content: center;
+  }
+}
+
 .table__params {
   line-height: 30px;
   text-transform: uppercase;
+  padding-right: 10px;
+  text-align: left;
+  margin-right: auto;
 
   @include mq-tablet {
     display: none;
+  }
+}
+
+.table__icon {
+  display: inline-block;
+  width: 31px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--value-no {
+    background-image: url("../img/icons/no.svg");
+  }
+
+  &--value-yes {
+    background-image: url("../img/icons/yes.svg");
   }
 }
 

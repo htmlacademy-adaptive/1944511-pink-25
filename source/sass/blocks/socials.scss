@@ -9,10 +9,24 @@
 }
 
 .socials__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 54px;
   height: 54px;
   border: 3px solid rgba($middle-color, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: $middle-color;
+  }
+
+  &:active {
+    border-color: rgba($middle-color, 0.1);
+  }
+
+  &:active .socials__link-img {
+    fill: rgba($base-color, 0.3);
+  }
 }
