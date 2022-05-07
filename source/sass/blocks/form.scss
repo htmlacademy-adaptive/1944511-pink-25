@@ -114,7 +114,7 @@
     content: "";
     width: 59px;
     height: calc(100% - 4px);
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -211,6 +211,14 @@
   @include mq-desktop {
     grid-template-columns: repeat(3, 262px);
     justify-content: space-between;
+  }
+}
+
+.form__advances-item {
+  &--orderly {
+    @include mq-desktop {
+      order: 1;
+    }
   }
 }
 
