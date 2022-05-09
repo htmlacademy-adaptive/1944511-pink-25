@@ -5,7 +5,7 @@
   display: none;
   width: 320px;
   margin: 0 auto;
-  padding: 44px 0 52px;
+  padding-top: 44px;
   background-color: $light-color;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
@@ -14,7 +14,7 @@
 
   @include mq-tablet {
     width: 460px;
-    padding: 49px 0 54px;
+    padding-top: 49px;
   }
 
   @include mq-desktop {
@@ -107,8 +107,18 @@
   border-radius: 0 0 1px 1px;
 }
 
+.modal--failure .modal__button-wrap {
+  padding-top: 0;
+  background-color: $light-color;
+
+  @include mq-desktop {
+    padding-top: 52px;
+    background-color: $bg-color-primary;
+  }
+}
+
 .modal__button {
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
 
   @include mq-tablet {
