@@ -1,6 +1,7 @@
 .form-post {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include mq-tablet {
     width: 275px;
@@ -12,6 +13,7 @@
 }
 
 .form-post__tools {
+  width: 100%;
   margin-bottom: 38px;
 
   @include mq-tablet {
@@ -21,26 +23,15 @@
 }
 
 .form-post__tools-icons {
-  margin-bottom: 40px;
-
-  @include mq-tablet {
-    margin-bottom: 0;
-  }
-}
-
-.form-post__tools-range {
-  flex-grow: 1;
-}
-
-.form-post__icons-list {
   display: flex;
   width: 194px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 0;
   list-style-type: none;
   justify-content: space-between;
 
   @include mq-tablet {
+    margin-bottom: 0;
     flex-direction: column;
     width: 24px;
   }
@@ -50,11 +41,36 @@
   }
 }
 
+.form-post__tools-icon {
+  position: relative;
+
+  @include mq-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+  }
+}
+
+.form-post__tools-icon::after {
+  @include mq-tablet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba($middle-color, 0.1);
+  }
+}
+
 .form-post__label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 44px;
-  outline: 1px solid #ffffff;
 
   @include mq-tablet {
     width: 24px;
@@ -67,12 +83,71 @@
   }
 }
 
+.form-post__label-icon {
+  fill: rgba($middle-color, 0.3);
+
+  @include mq-tablet {
+    fill: $base-color;
+  }
+
+  &--active {
+    fill: $base-color;
+  }
+
+  &:hover {
+    fill: rgba($middle-color, 0.5);
+  }
+}
+
 .form-post__range-list {
   @include list;
-  width: 100%;
+  width: 320px;
+  flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  @include mq-tablet {
+    width: 100%;
+  }
+}
+
+.form-post__range-item {
+  position: relative;
+  display: none;
+  padding-bottom: 34px;
+  box-sizing: border-box;
+
+  @include mq-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    height: 72px;
+  }
+
+  &--active {
+    display: block;
+
+    @include mq-tablet {
+      display: flex;
+    }
+  }
+}
+
+.form-post__range-item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 320px;
+  height: 1px;
+  content: "";
+  background-color: rgba($middle-color, 0.1);
+
+  @include mq-tablet {
+    width: 100%;
+  }
 }
 
 .form-post__range {
@@ -96,7 +171,7 @@
 }
 
 .form-post__submit {
-  width: 100%;
+  width: 280px;
   margin-bottom: 12px;
 
   @include mq-tablet {
@@ -110,7 +185,7 @@
 }
 
 .form-post__reset {
-  width: 100%;
+  width: 280px;
 
   @include mq-tablet {
     width: 260px;

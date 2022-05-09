@@ -1,4 +1,65 @@
 .control {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 30px;
+
+  &:hover .control__mark-checkbox,
+  &:hover .control__mark-radio {
+    border-color: $middle-color;
+  }
+}
+
+.control__input:focus-visible + .control__mark-checkbox,
+.control__input:focus-visible + .control__mark-radio {
+  border-color: $base-color;
+}
+
+.control__mark-checkbox {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-right: 22px;
+  background-color: $light-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+
+  &::before {
+    display: none;
+    width: 22px;
+    height: 16px;
+    margin: auto;
+    content: "";
+    background-image: url("../img/icons/form-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.control__input:checked + .control__mark-checkbox::before {
+  display: block;
+}
+
+.control__mark-radio {
+  display: flex;
+  width: 37px;
+  height: 37px;
+  margin-right: 22px;
+  background-color: $light-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+
+  &::before {
+    display: none;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    content: "";
+    background-color: $base-color;
+    border-radius: 50%;
+  }
+}
+
+.control__input:checked + .control__mark-radio::before {
+  display: block;
 }

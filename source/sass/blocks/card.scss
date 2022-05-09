@@ -4,6 +4,38 @@
   height: 100%;
 }
 
+.card--base .card__link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(0);
+    content: "Панорама дня";
+    display: block;
+    width: 140px;
+    background-color: $base-color;
+    font-size: 12px;
+    font-weight: 700;
+    color: $light-color;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px 5px;
+    box-sizing: border-box;
+
+    @include mq-tablet {
+      top: 57px;
+      transform: translateX(170px);
+    }
+
+    @include mq-desktop {
+      top: 54px;
+      transform: translateX(330px);
+    }
+  }
+}
+
 .card__img {
   @include img;
   width: 100%;
@@ -73,5 +105,12 @@
   @include mq-tablet {
     order: 3;
     margin-left: auto;
+  }
+}
+
+.card--base .like__button {
+  @include mq-tablet {
+    margin-left: 16px;
+    margin-right: 0;
   }
 }
