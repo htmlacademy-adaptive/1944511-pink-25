@@ -1,26 +1,42 @@
 .promo {
   background-color: $bg-color-secondary;
-  background-image: linear-gradient(to bottom, transparent 473px, $bg-color-secondary 473px), url("../img/promo.png"), url("../img/bg-promo.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, 50% 187px, 0 0;
-  background-size: auto, auto, 100% auto;
 
   @include mq-tablet {
     background-image: url("../img/promo-tablet.png"), url("../img/bg-promo-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-position: center bottom, center;
     background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-tablet@2x.png"), url("../img/bg-promo-tablet@2x.jpg");
+      background-size: 660px auto, cover;
+    }
   }
 
   @include mq-desktop {
     background-image: url("../img/promo-desktop.png"), url("../img/bg-promo-desktop.jpg");
     background-position: right bottom, center;
     background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-desktop@2x.png"), url("../img/bg-promo-desktop@2x.jpg");
+      background-size: 1050px auto, cover;
+    }
+  }
+}
+
+.promo__container {
+  @include mq-tablet {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @include mq-desktop {
+    width: 940px;
   }
 }
 
 .promo__content {
-  padding: 95px 0 38px;
-
   @include mq-tablet {
     padding: 212px 320px 118px 0;
   }
@@ -30,16 +46,52 @@
   }
 }
 
+.promo__slogan-wrap {
+  padding-top: 95px;
+  padding-bottom: 320px;
+  background-image: url("../img/promo.png"), url("../img/bg-promo.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% bottom, 0 0;
+  background-size: auto, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo@2x.png"), url("../img/bg-promo@2x.jpg");
+    background-size: 320px auto, cover;
+  }
+
+  @include mq-tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: none;
+  }
+}
+
 .promo__slogan {
+  width: 280px;
   margin-top: 0;
-  margin-bottom: 348px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   @include mq-tablet {
     margin-bottom: 39px;
+    background-image: none;
   }
 
   @include mq-desktop {
     margin-bottom: 51px;
+  }
+}
+
+.promo__download {
+  width: 280px;
+  padding: 28px 0 38px;
+  margin: 0 auto;
+
+  @include mq-tablet {
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 }
