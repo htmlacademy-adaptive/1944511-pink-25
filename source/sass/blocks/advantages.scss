@@ -22,12 +22,22 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages@2x.png");
+    background-size: 157px auto;
+  }
+
 
   @include mq-tablet {
     padding-top: 58px;
     padding-bottom: 49px;
     background-image: url("../img/advantages-tablet.png");
     background-position: left bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   @include mq-desktop {

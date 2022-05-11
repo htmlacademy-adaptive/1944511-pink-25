@@ -110,7 +110,7 @@
     position: absolute;
     top: 2px;
     right: 2px;
-    display: block;
+    display: none;
     content: "";
     width: 59px;
     height: calc(100% - 4px);
@@ -118,6 +118,10 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
+
+    @include mq-tablet {
+      display: block;
+    }
   }
 }
 

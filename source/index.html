@@ -5,6 +5,10 @@
     <title>HTML Academy: Пинк</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
@@ -70,9 +74,11 @@
 
       <!-- Promo -->
       <section class="promo">
-        <div class="container">
+        <div class="promo__container">
           <div class="promo__content">
-            <p class="promo__slogan index-title index-title--theme-light">Взгляните на&nbsp;жизнь<br>иначе!</p>
+            <div class="promo__slogan-wrap">
+              <p class="promo__slogan index-title index-title--theme-light">Взгляните на&nbsp;жизнь<br>иначе!</p>
+            </div>
             <div class="promo__download download">
               <h2 class="visually-hidden">Скачайте приложение Пинк.</h2>
                 <a class="download__link button button--primary" href="https://www.apple.com/ru/app-store/">
@@ -115,21 +121,21 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image-wrap">
-                <img class="advantages__image" src="./img/smartphone-1.png" alt="Черно-белое фото на смартфоне." width="186" height="301">
+                <img class="advantages__image" src="./img/smartphone-1.png" srcset="./img/smartphone-1@2x.png 2x" alt="Черно-белое фото на смартфоне." width="186" height="303">
               </div>
               <p class="advantages__lead">Поднимает настроение</p>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrap">
-                <img class="advantages__image" src="./img/smartphone-2.png" alt="Розовое фото на смартфоне." width="186" height="301">
+                <img class="advantages__image" src="./img/smartphone-2.png" srcset="./img/smartphone-2@2x.png 2x" alt="Розовое фото на смартфоне." width="186" height="303">
               </div>
               <p class="advantages__lead">Меняет мир вокруг</p>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrap">
-                <img class="advantages__image" src="./img/smartphone-3.png" alt="Фото со смайлом на смартфоне." width="186" height="301">
+                <img class="advantages__image" src="./img/smartphone-3.png" srcset="./img/smartphone-3@2x.png 2x"alt="Фото со смайлом на смартфоне." width="186" height="303">
               </div>
               <p class="advantages__lead">Заводит новых&nbsp;друзей</p>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
