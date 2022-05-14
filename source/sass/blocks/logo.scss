@@ -3,12 +3,16 @@
   align-items: end;
 
   &:hover .logo__img,
-  &:hover .logo__text {
+  &:hover .logo__img-header,
+  &:hover .logo__text,
+  &:hover .logo__text-stars {
     fill: $base-color;
   }
 
   &:active .logo__img,
-  &:active .logo__text {
+  &:active .logo__img-header,
+  &:active .logo__text,
+  &:active .logo__text-stars {
     fill: rgba($light-color, 0.3);
   }
 }
@@ -16,6 +20,7 @@
 .logo__img {
   display: none;
   margin-right: 11px;
+  fill: #ffffff;
 
   @include mq-desktop {
     display: inline-block;
@@ -32,7 +37,7 @@
   }
 }
 
-.logo--theme-color .logo__img--tablet {
+.logo--theme-color .logo__img {
   display: inline-block;
   fill: $base-color;
 
@@ -41,13 +46,42 @@
   }
 }
 
-.logo__star {
+.logo__img-header {
+  fill: #ffffff;
+  margin-right: 11px;
   display: none;
 
   @include mq-desktop {
     display: inline-block;
   }
 }
+
+.logo__text {
+  fill: #ffffff;
+
+  @include mq-desktop {
+    display: none;
+  }
+
+}
+
+.logo__text-stars {
+  display: none;
+  fill: #ffffff;
+
+  @include mq-desktop {
+    display: inline-block;
+  }
+
+}
+
+// .logo__star {
+//   display: none;
+
+//   @include mq-desktop {
+//     display: inline-block;
+//   }
+// }
 
 .logo--theme-color:hover .logo__text {
   fill: $base-color;
