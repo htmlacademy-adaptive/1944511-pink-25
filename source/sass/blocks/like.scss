@@ -8,6 +8,7 @@
 
 .like__button {
   @include btn;
+  display: flex;
   order: -1;
   margin-right: 18px;
   padding: 0;
@@ -18,4 +19,16 @@
     order: 1;
     margin-left: auto;
   }
+
+  &:hover .like__button-icon {
+    fill: $middle-color;
+  }
+
+  &:active .like__button-icon {
+    fill: rgba($middle-color, 0.3);
+  }
+}
+
+.like__button-icon {
+  fill: $base-color;
 }
