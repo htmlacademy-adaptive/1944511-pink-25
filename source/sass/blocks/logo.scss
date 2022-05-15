@@ -20,11 +20,7 @@
 .logo__img {
   display: none;
   margin-right: 11px;
-  fill: #ffffff;
-
-  @include mq-desktop {
-    display: inline-block;
-  }
+  fill: $light-color;
 
   &--tablet {
     @include mq-tablet {
@@ -47,7 +43,17 @@
 }
 
 .logo__img-header {
-  fill: #ffffff;
+  fill: $light-color;
+  margin-right: 11px;
+  display: none;
+
+  @include mq-desktop {
+    display: inline-block;
+  }
+}
+
+.logo__img-footer {
+  fill: $base-color;
   margin-right: 11px;
   display: none;
 
@@ -57,40 +63,38 @@
 }
 
 .logo__text {
-  fill: #ffffff;
+  fill: $light-color;
 
   @include mq-desktop {
     display: none;
   }
+}
 
+.logo--theme-color .logo__text {
+  fill: $middle-color;
 }
 
 .logo__text-stars {
   display: none;
-  fill: #ffffff;
+  fill: $light-color;
 
   @include mq-desktop {
     display: inline-block;
   }
-
 }
 
-// .logo__star {
-//   display: none;
-
-//   @include mq-desktop {
-//     display: inline-block;
-//   }
-// }
-
-.logo--theme-color:hover .logo__text {
-  fill: $base-color;
+.logo--theme-color .logo__text-stars {
+  fill: $middle-color;
 }
 
+.logo--theme-color:active .logo__text-stars,
 .logo--theme-color:active .logo__text {
-  fill: rgba($middle-color, 0.3);
+  fill: $middle-color;
+  opacity: 0.3;
 }
 
-.logo--theme-color:active .logo__img {
-  fill: rgba($base-color, 0.3);
+.logo--theme-color:active .logo__img,
+.logo--theme-color:active .logo__img-footer {
+  fill: $base-color;
+  opacity: 0.3;
 }
