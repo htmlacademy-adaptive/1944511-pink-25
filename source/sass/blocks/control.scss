@@ -17,6 +17,7 @@
 
 .control__mark-checkbox {
   display: flex;
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
   margin-right: 22px;
@@ -42,6 +43,7 @@
 
 .control__mark-radio {
   display: flex;
+  flex-shrink: 0;
   width: 37px;
   height: 37px;
   margin-right: 22px;

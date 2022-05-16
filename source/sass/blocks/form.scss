@@ -54,6 +54,7 @@
 
 .form__label-primary {
   display: block;
+  max-width: 170px;
   margin-bottom: 17px;
   margin-left: 20px;
   line-height: 30px;
@@ -376,6 +377,10 @@
     width: 296px;
     margin-bottom: 0;
   }
+}
+
+.form-note {
+  max-width: 300px;
 }
 
 .form__note-symbol {
