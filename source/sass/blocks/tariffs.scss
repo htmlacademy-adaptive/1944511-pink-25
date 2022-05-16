@@ -1,10 +1,10 @@
 .tariffs {
-  padding: 100px 0 49px;
+  padding: 96px 0 42px;
   background-color: $bg-color-primary;
   background-image: url("../img/bg-tariffs.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 20px;
+  background-size: 100% 16px;
 
   @include mq-tablet {
     padding: 117px 0 70px;
@@ -44,7 +44,7 @@
 }
 
 .tariffs__pagination {
-  margin-top: 45px;
+  margin-top: 42px;
 
   @include mq-tablet {
     display: none;

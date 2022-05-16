@@ -1,5 +1,5 @@
 .contacts {
-  padding: 55px 0 40px;
+  padding: 42px 0 40px;
 
   @include mq-desktop {
     padding: 74px 0 26px;
@@ -8,7 +8,7 @@
 
 .contacts__slogan {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 
   @include mq-tablet {
     margin-bottom: 51px;
@@ -21,7 +21,7 @@
 
 .contacts__list {
   display: grid;
-  row-gap: 33px;
+  row-gap: 19px;
 
   @include mq-tablet {
     display: flex;
@@ -59,7 +59,7 @@
 }
 
 .contacts__title {
-  margin-bottom: 13px;
+  margin-bottom: -1px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;

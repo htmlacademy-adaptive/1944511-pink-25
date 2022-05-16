@@ -19,7 +19,7 @@
 
 .logo__img {
   display: none;
-  margin-right: 11px;
+  margin-right: 10px;
   fill: $light-color;
 
   &--tablet {
@@ -44,7 +44,7 @@
 
 .logo__img-header {
   fill: $light-color;
-  margin-right: 11px;
+  margin-right: 10px;
   display: none;
 
   @include mq-desktop {
@@ -54,7 +54,7 @@
 
 .logo__img-footer {
   fill: $base-color;
-  margin-right: 11px;
+  margin-right: 10px;
   display: none;
 
   @include mq-desktop {

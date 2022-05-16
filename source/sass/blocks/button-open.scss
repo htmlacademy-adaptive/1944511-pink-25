@@ -1,5 +1,6 @@
 .button-open {
   @include btn;
+  padding: 0;
   align-self: end;
   background-color: transparent;
   border: none;

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 36px 0;
 
   @include mq-tablet {
     flex-direction: row;
@@ -16,7 +16,7 @@
 
 .main-footer__logo {
   display: inline-block;
-  margin-bottom: 39px;
+  margin-bottom: 31px;
 
   @include mq-tablet {
     margin-bottom: 0;
@@ -27,7 +27,7 @@
   display: flex;
   max-width: 200px;
   align-items: center;
-  margin-top: 39px;
+  margin-top: 35px;
   line-height: 18px;
 
   @include mq-tablet {
@@ -40,7 +40,7 @@
 }
 
 .main-footer__academy-link {
-  margin-left: 15px;
+  margin-left: 13px;
 
   &:hover .main-footer__academy-logo {
     fill: $middle-color;
