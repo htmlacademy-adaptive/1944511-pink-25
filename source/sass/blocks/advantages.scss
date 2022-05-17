@@ -8,6 +8,7 @@
 
   @include mq-tablet {
     background-size: 100% 290px;
+    background-image: url("../img/bg-advantages-tablet.svg");
   }
 
   @include mq-desktop {
@@ -29,8 +30,8 @@
 
 
   @include mq-tablet {
-    padding-top: 58px;
-    padding-bottom: 49px;
+    padding-top: 51px;
+    padding-bottom: 43px;
     background-image: url("../img/advantages-tablet.png");
     background-position: left bottom;
 
@@ -58,6 +59,11 @@
   &--second {
     margin-bottom: 113px;
 
+    @include mq-tablet {
+      margin-bottom: 108px;
+      line-height: 51px;
+    }
+
     @include mq-desktop {
       margin-bottom: 72px;
     }
@@ -75,7 +81,7 @@
     width: 310px;
     margin-left: auto;
     text-align: left;
-    row-gap: 46px;
+    row-gap: 34px;
   }
 
   @include mq-desktop {
@@ -125,7 +131,7 @@
   color: $dark-color;
 
   @include mq-tablet {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   @include mq-desktop {

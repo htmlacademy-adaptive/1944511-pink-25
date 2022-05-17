@@ -20,6 +20,14 @@
   display: block;
   content: "";
   background-image: url("../img/bg-map.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 29px;
+
+  @include mq-tablet {
+    height: 68px;
+    background-image: url("../img/bg-map-tablet.svg");
+    background-size: 100% 68px;
+  }
 }
 
 .map iframe {

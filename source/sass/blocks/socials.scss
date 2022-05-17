@@ -1,11 +1,17 @@
 .socials {
   @include list;
-  width: 180px;
+  width: 176px;
   display: grid;
   grid-template-columns: repeat(3, 54px);
-  column-gap: 9px;
+  column-gap: 8px;
+  row-gap: 5px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq-tablet {
+    width: 198px;
+    column-gap: 8px;
+  }
 }
 
 .socials__link {

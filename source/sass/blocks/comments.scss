@@ -3,7 +3,7 @@
   text-align: center;
 
   @include mq-tablet {
-    padding: 109px 0 15px;
+    padding: 92px 0 15px;
   }
 
   @include mq-desktop {
@@ -53,7 +53,7 @@
 
   @include mq-tablet {
     font-size: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 
   @include mq-desktop {
@@ -70,6 +70,7 @@
 
   @include mq-tablet {
     display: block;
+    margin-bottom: 35px;
   }
 
   @include mq-desktop {
@@ -85,7 +86,7 @@
 
   @include mq-tablet {
     order: -1;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
     font-size: 18px;
   }
 }

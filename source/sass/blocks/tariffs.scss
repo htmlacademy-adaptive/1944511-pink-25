@@ -7,7 +7,9 @@
   background-size: 100% 16px;
 
   @include mq-tablet {
-    padding: 117px 0 70px;
+    padding: 95px 0 70px;
+    background-image: url("../img/bg-tariffs-tablet.svg");
+    background-size: 100% 40px;
   }
 
   @include mq-desktop {

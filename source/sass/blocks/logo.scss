@@ -19,7 +19,7 @@
 
 .logo__img {
   display: none;
-  margin-right: 10px;
+  margin-right: 11px;
   fill: $light-color;
 
   &--tablet {
@@ -36,6 +36,7 @@
 .logo--theme-color .logo__img {
   display: inline-block;
   fill: $base-color;
+  margin-right: 7px;
 
   @include mq-desktop {
     display: none;
