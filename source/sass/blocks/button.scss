@@ -3,7 +3,7 @@
   min-width: 100px;
   padding: 15px;
   font-size: 18px;
-  line-height: 1;
+  line-height: 18px;
   font-weight: 700;
   border-width: 3px;
   border-style: solid;
@@ -16,6 +16,10 @@
     max-width: 300px;
     border-color: $light-color;
     color: $light-color;
+
+    @include mq-desktop {
+      font-size: 21px;
+    }
 
     &:hover {
       background-color: $light-color;

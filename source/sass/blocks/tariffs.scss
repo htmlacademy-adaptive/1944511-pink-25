@@ -13,7 +13,9 @@
   }
 
   @include mq-desktop {
-    padding: 159px 0 98px;
+    padding: 155px 0 99px;
+    background-image: url("../img/bg-tariffs-desktop.svg");
+    background-size: 100% 100px;
   }
 }
 

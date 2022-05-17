@@ -42,7 +42,7 @@
   }
 
   @include mq-desktop {
-    padding: 224px 640px 130px 0;
+    padding: 209px 640px 123px 0;
   }
 }
 
@@ -60,9 +60,14 @@
   }
 
   @include mq-tablet {
+    margin-bottom: 31px;
     padding-top: 0;
     padding-bottom: 0;
     background-image: none;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 37px;
   }
 }
 
@@ -75,12 +80,7 @@
   text-align: center;
 
   @include mq-tablet {
-    margin-bottom: 31px;
     background-image: none;
-  }
-
-  @include mq-desktop {
-    margin-bottom: 51px;
   }
 }
 

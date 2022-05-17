@@ -13,16 +13,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
-    max-width: 690px;
-    margin-right: -38px;
-    margin-left: -38px;
+    max-width: 710px;
+    margin-right: -40px;
+    margin-left: -40px;
   }
 }
 
 .main-menu__item {
   @include mq-desktop {
     max-width: 250px;
-    margin: 0 38px;
+    margin: 0 40px;
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   @include mq-desktop {
-    padding: 19px 0;
+    padding: 25px 0 10px;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;

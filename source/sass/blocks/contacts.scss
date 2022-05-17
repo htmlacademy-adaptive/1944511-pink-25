@@ -6,7 +6,7 @@
   }
 
   @include mq-desktop {
-    padding: 74px 0 26px;
+    padding: 59px 0 20px;
   }
 }
 
@@ -19,7 +19,7 @@
   }
 
   @include mq-desktop {
-    margin-bottom: 61px;
+    margin-bottom: 40px;
   }
 }
 
@@ -65,6 +65,10 @@
     @include mq-tablet {
       margin-top: 17px;
     }
+
+    @include mq-desktop {
+      margin-top: 0;
+    }
   }
 }
 
@@ -77,6 +81,10 @@
 
   @include mq-tablet {
     margin-bottom: 3px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 20px;
   }
 }
 

@@ -17,9 +17,9 @@
   background-position: left bottom 8px;
 
   @include mq-desktop {
-    padding: 115px 35px 120px 370px;
-    background-position: left top 17px;
-    background-size: 298px auto;
+    padding: 102px 35px 120px 370px;
+    background-position: left top 6px;
+    background-size: 299px auto;
   }
 }
 
@@ -34,7 +34,7 @@
 
   @include mq-desktop {
     width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 26px;
     line-height: 30px;
   }
 }
@@ -45,7 +45,7 @@
 
   @include mq-desktop {
     width: 533px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }

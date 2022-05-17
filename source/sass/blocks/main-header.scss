@@ -4,12 +4,17 @@
   left: 0;
   z-index: 5;
   width: 100%;
-  padding: 21px 0;
+  padding: 20px 0;
   background-color: rgba($dark-color, 0.3);
 
   @include mq-tablet {
     padding-top: 27px;
     padding-bottom: 43px;
+  }
+
+  @include mq-desktop {
+    padding-top: 21px;
+    padding-bottom: 40px;
   }
 
   &--active,

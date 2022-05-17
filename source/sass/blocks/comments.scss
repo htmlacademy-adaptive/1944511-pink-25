@@ -7,10 +7,10 @@
   }
 
   @include mq-desktop {
-    padding: 193px 0 45px;
+    padding: 176px 0 33px;
     background-image: url("../img/comments.svg");
     background-repeat: no-repeat;
-    background-position: center top 72px;
+    background-position: center top 64px;
   }
 }
 
@@ -58,7 +58,7 @@
 
   @include mq-desktop {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 }
 
@@ -100,7 +100,7 @@
 
   @include mq-desktop {
     position: absolute;
-    top: 35px;
+    top: 29px;
     left: 0;
     display: flex;
     width: 100%;

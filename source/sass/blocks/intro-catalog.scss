@@ -28,14 +28,14 @@
 }
 
 .intro-catalog__title-wrap {
-  padding-top: 102px;
-  padding-bottom: 84px;
+  padding-top: 94px;
+  padding-bottom: 77px;
   min-height: 225px;
   box-sizing: border-box;
 
   @include mq-tablet {
-    padding-top: 191px;
-    padding-bottom: 143px;
+    padding-top: 176px;
+    padding-bottom: 128px;
   }
 
   @include mq-desktop {
@@ -55,11 +55,11 @@
 }
 
 .intro-catalog__info {
-  padding: 54px 0 60px;
+  padding: 44px 0 50px;
   background-color: $light-color;
 
   @include mq-tablet {
-    padding: 100px 0 85px;
+    padding: 92px 0 77px;
   }
 
   @include mq-desktop {

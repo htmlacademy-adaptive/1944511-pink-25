@@ -12,6 +12,10 @@
     width: 198px;
     column-gap: 8px;
   }
+
+  @include mq-desktop {
+    width: 170px;
+  }
 }
 
 .socials__link {

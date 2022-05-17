@@ -1,7 +1,6 @@
 .form-post {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @include mq-tablet {
     width: 275px;
@@ -18,14 +17,14 @@
 
   @include mq-tablet {
     display: flex;
-    margin-bottom: auto;
+    margin-bottom: 66px;
   }
 }
 
 .form-post__tools-icons {
   display: flex;
-  width: 194px;
-  margin: 0 auto 40px;
+  width: 205px;
+  margin: 0 auto 23px;
   padding: 0;
   list-style-type: none;
   justify-content: space-between;
@@ -115,13 +114,13 @@
 .form-post__range-item {
   position: relative;
   display: none;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   box-sizing: border-box;
 
   @include mq-tablet {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 29px;
     padding-bottom: 0;
     height: 72px;
   }
@@ -176,6 +175,7 @@
 
   @include mq-tablet {
     width: 260px;
+    margin-bottom: 25px;
   }
 
   @include mq-desktop {

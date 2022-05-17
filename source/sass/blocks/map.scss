@@ -28,6 +28,12 @@
     background-image: url("../img/bg-map-tablet.svg");
     background-size: 100% 68px;
   }
+
+  @include mq-tablet {
+    height: 103px;
+    background-image: url("../img/bg-map-desktop.svg");
+    background-size: 100% 103px;
+  }
 }
 
 .map iframe {
