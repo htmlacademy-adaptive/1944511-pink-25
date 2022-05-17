@@ -6,7 +6,7 @@
   }
 
   @include mq-desktop {
-    padding-top: 67px;
+    padding-top: 61px;
   }
 }
 
@@ -24,6 +24,10 @@
     font-size: 18px;
     margin-bottom: 69px;
   }
+
+  @include mq-desktop {
+    margin-bottom: 66px;
+  }
 }
 
 .post__edit {
@@ -32,6 +36,10 @@
 
   @include mq-tablet {
     padding: 41px 0 54px;
+  }
+
+  @include mq-desktop {
+    padding-bottom: 57px;
   }
 }
 

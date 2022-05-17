@@ -12,6 +12,12 @@
   @include mq-desktop {
     padding: 71px 0;
   }
+
+  &--catalog {
+    @include mq-desktop {
+      padding-top: 98px;
+    }
+  }
 }
 
 .main-footer__logo {
