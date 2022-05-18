@@ -28,19 +28,19 @@
 }
 
 .intro-form__title-wrap {
-  padding-top: 102px;
-  padding-bottom: 51px;
+  padding-top: 94px;
+  padding-bottom: 44px;
   min-height: 225px;
   box-sizing: border-box;
 
   @include mq-tablet {
-    padding-top: 191px;
-    padding-bottom: 74px;
+    padding-top: 176px;
+    padding-bottom: 60px;
   }
 
   @include mq-desktop {
-    padding-top: 184px;
-    padding-bottom: 104px;
+    padding-top: 168px;
+    padding-bottom: 90px;
   }
 }
 
@@ -51,11 +51,15 @@
 }
 
 .intro-form__info {
-  padding: 54px 0;
+  padding: 45px 0 34px;
   background-color: $light-color;
 
   @include mq-tablet {
-    padding: 100px 0 82px;
+    padding: 92px 0 72px;
+  }
+
+  @include mq-desktop {
+    padding-bottom: 64px;
   }
 }
 

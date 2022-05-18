@@ -5,7 +5,7 @@
   display: none;
   width: 320px;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 38px;
   background-color: $light-color;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
@@ -46,7 +46,7 @@
 }
 
 .modal__title {
-  margin: 0 auto 37px;
+  margin: 0 auto 21px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -65,7 +65,7 @@
 }
 
 .modal__description {
-  margin: 0 auto 50px;
+  margin: 0 auto 42px;
 
   @include mq-tablet {
     width: 320px;
@@ -102,7 +102,8 @@
 }
 
 .modal__button-wrap {
-  padding: 52px 0;
+  padding-top: 48px;
+  padding-bottom: 50px;
   background-color: $bg-color-primary;
   border-radius: 0 0 1px 1px;
 }

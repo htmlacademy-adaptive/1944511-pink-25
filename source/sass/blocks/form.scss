@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 26px;
+  padding-bottom: 21px;
 
   @include mq-tablet {
     display: flex;
@@ -13,15 +13,14 @@
     display: grid;
     grid-template-columns: 433px 433px;
     column-gap: 74px;
-    row-gap: 64px;
+    row-gap: 50px;
     padding-bottom: 0;
   }
 }
 
 .form__user {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 44px;
+  margin: 0 auto 41px;
   box-sizing: border-box;
 
   @include mq-tablet {
@@ -32,7 +31,7 @@
   @include mq-desktop {
     width: 100%;
     margin-bottom: 0;
-    margin-top: 13px;
+    margin-top: 23px;
     grid-column: 1/2;
   }
 }
@@ -41,8 +40,12 @@
   @include list;
   display: grid;
   height: 100%;
-  row-gap: 29px;
+  row-gap: 19px;
   align-content: space-between;
+
+  @include mq-tablet {
+    row-gap: 53px;
+  }
 }
 
 .form__user-item {
@@ -55,8 +58,8 @@
 .form__label-primary {
   display: block;
   max-width: 170px;
-  margin-bottom: 17px;
-  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-left: 22px;
   line-height: 30px;
   color: $base-color;
   text-transform: uppercase;
@@ -70,16 +73,18 @@
   &--contacts {
     @include mq-tablet {
       margin-right: 0;
-      margin-top: 22px;
+      margin-top: 12px;
+      margin-left: 17px;
     }
   }
 }
 
 .form__input {
   width: 100%;
-  padding: 23px 20px;
+  padding: 14px 20px;
   font-size: 18px;
   line-height: 30px;
+  font-family: inherit;
   color: $dark-color;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -139,7 +144,7 @@
 }
 
 .form__advances-wrap {
-  padding: 42px 0;
+  padding: 39px 0 42px;
   background-color: $bg-color-primary;
 
   @include mq-tablet {
@@ -162,19 +167,19 @@
     order: 4;
     width: 620px;
     padding: 0 60px 50px;
-    margin-bottom: 65px;
+    margin-bottom: 49px;
   }
 
   @include mq-desktop {
     width: 100%;
     margin: 0;
-    padding: 0 62px 57px;
+    padding: 0 57px 54px 57px;
   }
 }
 
 .form__legend {
   width: 225px;
-  margin-bottom: 44px;
+  margin-bottom: 37px;
   text-align: center;
   line-height: 18px;
   color: $base-color;
@@ -185,7 +190,7 @@
     width: auto;
     padding-left: 31px;
     padding-right: 31px;
-    margin-bottom: 49px;
+    margin-bottom: 39px;
     line-height: 30px;
   }
 
@@ -194,16 +199,21 @@
 
     @include mq-tablet {
       display: inline;
+      margin-bottom: 29px;
     }
   }
 
   &--emotions {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 
     @include mq-tablet {
       padding-left: 38px;
       padding-right: 38px;
-      margin-bottom: 42px;
+      margin-bottom: 32px;
+    }
+
+    @include mq-desktop {
+      margin-bottom: 29px;
     }
   }
 }
@@ -211,11 +221,11 @@
 .form__advances-list {
   @include list;
   display: grid;
-  row-gap: 47px;
+  row-gap: 43px;
 
   @include mq-desktop {
-    grid-template-columns: repeat(3, 262px);
-    justify-content: space-between;
+    grid-template-columns: 296px 272px 215px;
+    column-gap: 20px;
   }
 }
 
@@ -230,19 +240,19 @@
 .form__contacts {
   width: 280px;
   margin: 0 auto;
-  padding: 42px 0 44px;
+  padding: 32px 0 42px;
 
   @include mq-tablet {
     order: 3;
     width: 620px;
-    padding: 0 60px 37px;
-    margin-bottom: 65px;
+    padding: 0 60px 25px;
+    margin-bottom: 53px;
   }
 
   @include mq-desktop {
     width: 100%;
     margin: 0;
-    padding: 0 62px 23px;
+    padding: 0 60px 13px;
     grid-column: 1/-1;
   }
 }
@@ -250,10 +260,10 @@
 .form__contacts-list {
   @include list;
   display: grid;
-  row-gap: 29px;
+  row-gap: 18px;
 
   @include mq-tablet {
-    row-gap: 41px;
+    row-gap: 29px;
   }
 
   @include mq-desktop {
@@ -270,14 +280,14 @@
 }
 
 .form__apps-wrap {
-  padding: 42px 0;
+  padding: 40px 0;
   background-color: $bg-color-primary;
 
   @include mq-tablet {
     order: 2;
     padding: 0;
     background-color: $light-color;
-    margin-bottom: 65px;
+    margin-bottom: 52px;
   }
 
   @include mq-desktop {
@@ -306,25 +316,26 @@
 .form__apps-list {
   @include list;
   display: grid;
-  row-gap: 38px;
+  row-gap: 33px;
 
   @include mq-tablet {
-    padding: 0 60px 50px;
+    padding: 0 60px 54px;
   }
 
   @include mq-desktop {
     flex-grow: 1;
     align-content: space-between;
+    padding-left: 71px;
   }
 }
 
 .form__emotions-wrap {
-  padding: 42px 0 52px;
+  padding: 38px 0 41px;
 
   @include mq-tablet {
     order: 5;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 
   @include mq-desktop {
@@ -339,19 +350,28 @@
 
   @include mq-tablet {
     width: 620px;
-    padding: 0 60px 53px;
+    padding: 0 60px 45px;
   }
 
   @include mq-desktop {
     width: 100%;
     margin: 0;
+    padding-bottom: 37px;
   }
 }
 
 .form__textarea {
-  min-height: 197px;
+  min-height: 201px;
   overflow: auto;
   resize: none;
+
+  @include mq-tablet {
+    min-height: 191px;
+  }
+
+  @include mq-desktop {
+    min-height: 128px;
+  }
 }
 
 .form__button-wrap {
@@ -366,21 +386,26 @@
 
   @include mq-desktop {
     grid-column: 1/-1;
+    margin-top: 14px;
   }
 }
 
 .form__button {
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 33px;
 
   @include mq-tablet {
-    width: 296px;
+    width: 300px;
     margin-bottom: 0;
   }
 }
 
-.form-note {
-  max-width: 300px;
+.form__note {
+  max-width: 280px;
+
+  @include mq-desktop {
+    max-width: 350px;
+  }
 }
 
 .form__note-symbol {
@@ -388,6 +413,15 @@
 }
 
 .form__note-text {
+  font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.form__note-hidden {
+  display: none;
+
+  @include mq-desktop {
+    display: inline;
+  }
 }

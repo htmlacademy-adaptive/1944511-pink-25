@@ -5,6 +5,10 @@
   background-color: transparent;
   border: none;
 
+  @include mq-tablet {
+    margin-top: 15px;
+  }
+
   @include mq-desktop {
     display: none;
   }
