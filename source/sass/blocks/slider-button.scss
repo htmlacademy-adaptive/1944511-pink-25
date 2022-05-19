@@ -6,10 +6,14 @@
   font-size: 0;
 
   &:hover .slider-button__img {
-    opacity: 0.6;
+    fill: rgba($middle-color, 0.6);
   }
 
   &:active .slider-button__img {
-    opacity: 0.1;
+    fill: rgba($middle-color, 0.1);
   }
+}
+
+.slider-button__img {
+  fill: rgba($middle-color, 0.3);
 }

@@ -1,8 +1,13 @@
 .button-open {
   @include btn;
+  padding: 0;
   align-self: end;
   background-color: transparent;
   border: none;
+
+  @include mq-tablet {
+    margin-top: 15px;
+  }
 
   @include mq-desktop {
     display: none;
@@ -15,4 +20,8 @@
   &:active .button-open__image {
     fill: rgba($base-color, 0.3);
   }
+}
+
+.button-open__image {
+  fill: $light-color;
 }

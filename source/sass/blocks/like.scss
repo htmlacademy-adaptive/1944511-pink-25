@@ -8,6 +8,7 @@
 
 .like__button {
   @include btn;
+  display: flex;
   order: -1;
   margin-right: 18px;
   padding: 0;
@@ -17,5 +18,22 @@
   @include mq-tablet {
     order: 1;
     margin-left: auto;
+    margin-right: 0;
   }
+
+  &:hover .like__button-icon {
+    fill: $middle-color;
+  }
+
+  &:active .like__button-icon {
+    fill: rgba($middle-color, 0.3);
+  }
+}
+
+.like__button-icon {
+  fill: $base-color;
+}
+
+.like__text {
+  margin-right: 3px;
 }

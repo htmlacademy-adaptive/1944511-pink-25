@@ -1,16 +1,16 @@
 .comments {
-  padding: 50px 0 40px;
+  padding: 41px 0 40px;
   text-align: center;
 
   @include mq-tablet {
-    padding: 109px 0 15px;
+    padding: 92px 0 15px;
   }
 
   @include mq-desktop {
-    padding: 193px 0 45px;
+    padding: 176px 0 33px;
     background-image: url("../img/comments.svg");
     background-repeat: no-repeat;
-    background-position: center top 72px;
+    background-position: center top 64px;
   }
 }
 
@@ -44,7 +44,7 @@
 
 .comments__author {
   display: inline-block;
-  margin-bottom: 31px;
+  margin-bottom: 12px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -53,12 +53,12 @@
 
   @include mq-tablet {
     font-size: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 
   @include mq-desktop {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 }
 
@@ -70,6 +70,7 @@
 
   @include mq-tablet {
     display: block;
+    margin-bottom: 35px;
   }
 
   @include mq-desktop {
@@ -85,7 +86,7 @@
 
   @include mq-tablet {
     order: -1;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
     font-size: 18px;
   }
 }
@@ -99,7 +100,7 @@
 
   @include mq-desktop {
     position: absolute;
-    top: 35px;
+    top: 29px;
     left: 0;
     display: flex;
     width: 100%;
@@ -108,7 +109,7 @@
 }
 
 .comments__pagination {
-  margin-top: 44px;
+  margin-top: 31px;
 
   @include mq-tablet {
     margin-top: 0;

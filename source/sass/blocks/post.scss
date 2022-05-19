@@ -1,19 +1,19 @@
 .post {
-  padding-top: 49px;
+  padding-top: 43px;
 
   @include mq-tablet {
-    padding-top: 73px;
+    padding-top: 66px;
   }
 
   @include mq-desktop {
-    padding-top: 67px;
+    padding-top: 61px;
   }
 }
 
 .post__slogan {
   width: 280px;
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
   margin-left: auto;
   margin-right: auto;
   line-height: 30px;
@@ -22,25 +22,35 @@
   @include mq-tablet {
     width: 422px;
     font-size: 18px;
-    margin-bottom: 78px;
+    margin-bottom: 69px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 66px;
   }
 }
 
 .post__edit {
-  padding: 20px 0 41px;
+  padding: 20px 0 45px;
   background-color: $bg-color-primary;
 
   @include mq-tablet {
-    padding: 57px 0 54px;
+    padding: 41px 0 54px;
+  }
+
+  @include mq-desktop {
+    padding-bottom: 57px;
   }
 }
 
 .post__container {
   box-sizing: border-box;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include mq-tablet {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 620px;
     margin-left: auto;
@@ -54,12 +64,17 @@
   }
 }
 
-.post__image {
+.post__img {
   @include img;
+
+  @include mq-tablet {
+    width: 300px;
+    margin-top: 16px;
+  }
 }
 
 .post__form {
-  margin-top: 43px;
+  margin-top: 41px;
 
   @include mq-tablet {
     margin-top: 0;

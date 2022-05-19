@@ -1,10 +1,14 @@
 .catalog__lead {
   margin-bottom: 20px;
+
+  @include mq-tablet {
+    margin-bottom: 52px;
+  }
 }
 
 .catalog__list {
   display: grid;
-  row-gap: 20px;
+  row-gap: 19px;
   padding: 0;
   list-style-type: none;
 
@@ -15,6 +19,6 @@
 
   @include mq-desktop {
     grid-template-columns: repeat(3, 300px);
-    column-gap: 20px;
+    row-gap: 53px;
   }
 }

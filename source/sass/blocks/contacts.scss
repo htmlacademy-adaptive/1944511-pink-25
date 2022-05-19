@@ -1,27 +1,31 @@
 .contacts {
-  padding: 55px 0 40px;
+  padding: 42px 0 40px;
+
+  @include mq-tablet {
+    padding-bottom: 21px;
+  }
 
   @include mq-desktop {
-    padding: 74px 0 26px;
+    padding: 59px 0 20px;
   }
 }
 
 .contacts__slogan {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 
   @include mq-tablet {
-    margin-bottom: 51px;
+    margin-bottom: 32px;
   }
 
   @include mq-desktop {
-    margin-bottom: 61px;
+    margin-bottom: 40px;
   }
 }
 
 .contacts__list {
   display: grid;
-  row-gap: 33px;
+  row-gap: 19px;
 
   @include mq-tablet {
     display: flex;
@@ -56,17 +60,31 @@
       order: 2;
     }
   }
+
+  &:last-child {
+    @include mq-tablet {
+      margin-top: 17px;
+    }
+
+    @include mq-desktop {
+      margin-top: 0;
+    }
+  }
 }
 
 .contacts__title {
-  margin-bottom: 13px;
+  margin-bottom: -1px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
 
   @include mq-tablet {
-    margin-bottom: 17px;
+    margin-bottom: 3px;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 20px;
   }
 }
 

@@ -11,22 +11,22 @@
 }
 
 .effects__content {
-  padding: 102px 0 30px 310px;
+  padding: 96px 0 30px 310px;
   background-image: url("../img/effects.svg");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left bottom 8px;
 
   @include mq-desktop {
-    padding: 115px 35px 120px 370px;
-    background-position: left top 17px;
-    background-size: 298px auto;
+    padding: 102px 35px 120px 370px;
+    background-position: left top 6px;
+    background-size: 299px auto;
   }
 }
 
 .effects__title {
   width: 170px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -34,18 +34,18 @@
 
   @include mq-desktop {
     width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 26px;
     line-height: 30px;
   }
 }
 
 .effects__desc {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   @include mq-desktop {
     width: 533px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }

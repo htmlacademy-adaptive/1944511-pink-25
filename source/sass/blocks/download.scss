@@ -12,19 +12,19 @@
   }
 
   @include mq-desktop {
-    margin-bottom: 67px;
+    margin-bottom: 70px;
   }
 }
 
 .download__list {
-  margin-bottom: 28px;
+  margin-bottom: 17px;
 
   @include mq-tablet {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
   }
 
   @include mq-desktop {
-    margin-bottom: 58px;
+    margin-bottom: 52px;
   }
 }
 

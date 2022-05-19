@@ -21,7 +21,7 @@
     color: $light-color;
     text-transform: uppercase;
     text-align: center;
-    padding: 13px 5px;
+    padding: 5px 5px;
     box-sizing: border-box;
 
     @include mq-tablet {
@@ -46,12 +46,17 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 25px 10px 25px 17px;
+  padding: 17px 10px 19px 17px;
   background-color: $bg-color-primary;
   box-sizing: border-box;
 
   @include mq-tablet {
-    padding: 30px;
+    padding: 23px 30px 23px;
+  }
+
+  @include mq-desktop {
+    padding-bottom: 22px;
+    padding-left: 28px;
   }
 }
 
@@ -69,11 +74,11 @@
 
   @include mq-desktop {
     width: 940px;
+    padding-bottom: 0;
   }
 }
 
 .card__cite {
-  margin-right: 3px;
   font-weight: 700;
   font-style: normal;
 }
@@ -85,8 +90,13 @@
 }
 
 .card__comment {
-  margin-top: 14px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  width: 100%;
+
+  @include mq-tablet {
+    min-height: 48px;
+  }
 }
 
 .card--base .card__comment {

@@ -38,17 +38,17 @@
 
 .promo__content {
   @include mq-tablet {
-    padding: 212px 320px 118px 0;
+    padding: 205px 320px 113px 0;
   }
 
   @include mq-desktop {
-    padding: 224px 640px 130px 0;
+    padding: 209px 640px 123px 0;
   }
 }
 
 .promo__slogan-wrap {
-  padding-top: 95px;
-  padding-bottom: 320px;
+  padding-top: 90px;
+  padding-bottom: 315px;
   background-image: url("../img/promo.png"), url("../img/bg-promo.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% bottom, 0 0;
@@ -60,9 +60,14 @@
   }
 
   @include mq-tablet {
+    margin-bottom: 31px;
     padding-top: 0;
     padding-bottom: 0;
     background-image: none;
+  }
+
+  @include mq-desktop {
+    margin-bottom: 37px;
   }
 }
 
@@ -75,18 +80,13 @@
   text-align: center;
 
   @include mq-tablet {
-    margin-bottom: 39px;
     background-image: none;
-  }
-
-  @include mq-desktop {
-    margin-bottom: 51px;
   }
 }
 
 .promo__download {
   width: 280px;
-  padding: 28px 0 38px;
+  padding: 27px 0 31px;
   margin: 0 auto;
 
   @include mq-tablet {

@@ -17,9 +17,10 @@
 
 .control__mark-checkbox {
   display: flex;
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
-  margin-right: 22px;
+  margin-right: 20px;
   background-color: $light-color;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -42,12 +43,17 @@
 
 .control__mark-radio {
   display: flex;
+  flex-shrink: 0;
   width: 37px;
   height: 37px;
-  margin-right: 22px;
+  margin-right: 28px;
   background-color: $light-color;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+
+  @include mq-tablet {
+    margin-right: 18px;
+  }
 
   &::before {
     display: none;

@@ -1,6 +1,7 @@
 .button-close {
   @include btn;
   display: none;
+  padding: 0;
   background-color: transparent;
   border: none;
 
@@ -15,4 +16,8 @@
   &:active .button-close__image {
     fill: rgba($base-color, 0.3);
   }
+}
+
+.button-close__image {
+  fill: $light-color;
 }
