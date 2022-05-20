@@ -65,4 +65,30 @@
       color: rgba($light-color, 0.3);
     }
   }
+
+  &--disabled {
+    cursor: not-allowed;
+    color: $light-color;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+
+    &:hover {
+      color: $light-color;
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+
+    &:active {
+      color: $light-color;
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $light-color;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
 }

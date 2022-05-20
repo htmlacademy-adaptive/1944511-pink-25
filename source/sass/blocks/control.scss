@@ -8,6 +8,11 @@
   &:hover .control__mark-radio {
     border-color: $middle-color;
   }
+
+  &:hover .control__input:disabled + .control__mark-checkbox,
+  &:hover .control__input:disabled + .control__mark-radio {
+    border-color: #e5e5e5;
+  }
 }
 
 .control__input:focus-visible + .control__mark-checkbox,
@@ -41,6 +46,12 @@
   display: block;
 }
 
+.control__input:disabled + .control__mark-checkbox,
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 .control__mark-radio {
   display: flex;
   flex-shrink: 0;
@@ -68,4 +79,9 @@
 
 .control__input:checked + .control__mark-radio::before {
   display: block;
+}
+
+.control__input:disabled + .control__mark-radio {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
