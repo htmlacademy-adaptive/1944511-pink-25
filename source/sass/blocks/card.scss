@@ -6,6 +6,16 @@
 
 .card--base .card__link {
   position: relative;
+  height: 137px;
+  overflow: hidden;
+
+  @include mq-tablet {
+    height: 509px;
+  }
+
+  @include mq-desktop {
+    height: 506px;
+  }
 
   &::before {
     position: absolute;
