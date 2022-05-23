@@ -10,6 +10,12 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensanslight.woff" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
 
@@ -140,7 +146,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/smartphone-3.webp 1x, img/smartphone-3@2x.webp 2x">
 
-                  <img class="advantages__image" src="img/smartphone-3.png" srcset="img/smartphone-3@2x.png 2x"alt="Фото со смайлом на смартфоне." width="186" height="303">
+                  <img class="advantages__image" src="img/smartphone-3.png" srcset="img/smartphone-3@2x.png 2x" alt="Фото со смайлом на смартфоне." width="186" height="303">
                 </picture>
               </div>
               <p class="advantages__lead">Заводит новых&nbsp;друзей</p>
@@ -428,7 +434,7 @@
       </ul>
       <span class="main-footer__development">
         Разработано
-        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo">
+        <a class="main-footer__academy-link academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="main-footer__academy-logo" width="41" height="41">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
