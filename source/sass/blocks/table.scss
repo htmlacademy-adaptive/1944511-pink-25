@@ -1,6 +1,7 @@
 .table {
   text-align: center;
   border-collapse: collapse;
+  background-color: #fff;
 }
 
 .table__cell {
@@ -52,9 +53,10 @@
     display: none;
 
     @include mq-tablet {
-      display: block;
-      background-color: transparent;
-      border-color: transparent;
+      display: table-cell;
+      background-color: $bg-color-primary;
+      border-left-color: $bg-color-primary;
+      border-top-color: $bg-color-primary;
     }
   }
 

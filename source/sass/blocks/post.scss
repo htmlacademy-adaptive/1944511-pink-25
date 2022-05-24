@@ -39,7 +39,8 @@
   }
 
   @include mq-desktop {
-    padding-bottom: 57px;
+    padding: 0;
+    background-color: $light-color;
   }
 }
 
@@ -61,6 +62,9 @@
     width: 940px;
     padding-left: 80px;
     padding-right: 60px;
+    padding-top: 41px;
+    padding-bottom: 57px;
+    background-color: $bg-color-primary;
   }
 }
 
