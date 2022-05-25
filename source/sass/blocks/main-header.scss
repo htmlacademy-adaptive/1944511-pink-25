@@ -29,20 +29,16 @@
   }
 }
 
-.main-header--active .main-header__button-open,
-.main-header--no-js .main-header__button-open {
+.main-header--menu-active .button-toogle__img-open,
+.main-header--no-js .button-toogle__img-open {
   display: none;
 }
 
-.main-header--active .main-header__button-close {
-  display: block;
-
-  @include mq-desktop {
-    display: none;
-  }
+.main-header--menu-active .button-toogle__img-close {
+  display: inline;
 }
 
-.main-header--no-js .main-header__button-close {
+.main-header--no-js .button-toogle__img-close {
   display: none;
 }
 

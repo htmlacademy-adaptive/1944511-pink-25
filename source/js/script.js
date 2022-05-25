@@ -1,17 +1,14 @@
 let menu = document.querySelector('.main-header');
-let btnOpen = document.querySelector('.main-header__button-open');
-let btnClose = document.querySelector('.main-header__button-close');
+let btnToogle = document.querySelector('.main-header__button-toogle');
+let map = document.querySelector('.map');
 
 menu.classList.remove('main-header--no-js');
+map.classList.remove('map--no-js');
 
-btnOpen.addEventListener('click', function () {
-  if (menu.classList.contains('main-header--active')) {
-    return;
+btnToogle.addEventListener('click', function () {
+  if (menu.classList.contains('main-header--menu-active')) {
+    menu.classList.remove('main-header--menu-active');
   } else {
-    menu.classList.add('main-header--active');
+    menu.classList.add('main-header--menu-active');
   }
-});
-
-btnClose.addEventListener('click', function () {
-  menu.classList.remove('main-header--active');
 });

@@ -53,24 +53,23 @@
             </li>
           </ul>
         </nav>
-        <button class="main-header__button-open button-open" type="button">
-          <svg class="button-open__image" width="50" height="24">
+        <button class="main-header__button-toogle button-toogle" type="button">
+          <svg class="button-toogle__img-open" width="50" height="24">
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <button class="main-header__button-close button-close" type="button">
-          <svg class="button-close__image" width="23" height="23">
+          <svg class="button-toogle__img-close" width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
-          <span class="visually-hidden">Закрыть меню.</span>
+          <span class="visually-hidden">
+            Переключить состояние меню.
+          </span>
         </button>
       </div>
     </header>
 
     <!-- Main-index -->
     <main class="main">
-      <h1 class="visually-hidden">Приложение Пинк для обработки фотографий</h1>
+      <h1 class="visually-hidden">Приложение Пинк для обработки фотографий.</h1>
 
       <!-- Promo -->
       <section class="promo">
@@ -110,7 +109,7 @@
 
       <!-- Advantages -->
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
+        <h2 class="visually-hidden">Преимущества приложения Пинк.</h2>
         <div class="advantages__wrap container">
           <p class="advantages__slogan index-title">
             Устали от серости мегаполиса?
@@ -168,7 +167,7 @@
 
       <!-- Comments -->
       <section class="comments">
-        <h2 class="visually-hidden">Отзывы</h2>
+        <h2 class="visually-hidden">Отзывы.</h2>
         <div class="comments__wrap container">
           <ul class="comments__list">
             <li class="comments__item">
@@ -238,12 +237,12 @@
         <div class="tariffs__table-wrap">
           <table class="tariffs__table table">
             <caption class="table__caption">
-              <h2 class="visually-hidden">Описание тарифов</h2>
+              <h2 class="visually-hidden">Описание тарифов.</h2>
             </caption>
             <thead class="table__header">
               <tr class="table__row table__row-header">
                 <th class="table__cell-head  table__cell-head--params">
-                  <span class="visually-hidden">Параметры</span>
+                  <span class="visually-hidden">Параметры.</span>
                 </th>
                 <th class="table__cell-head">
                   <p class="table__title">База</p>
@@ -353,7 +352,7 @@
 
       <!-- Contacts -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Контакты.</h2>
         <p class="contacts__slogan container index-title index-title--size-large">
           Остались вопросы? <br>Свяжитесь с нами!
         </p>
@@ -382,8 +381,17 @@
       </section>
 
       <!-- Map -->
-      <section class="map">
-        <h2 class="visually-hidden">Как добраться</h2>
+      <section class="map map--no-js">
+        <h2 class="visually-hidden">Как добраться.</h2>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Местоположение офиса">
+        </picture>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
         </iframe>
       </section>

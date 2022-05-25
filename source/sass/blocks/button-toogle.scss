@@ -1,0 +1,36 @@
+.button-toogle {
+  @include btn;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  @include mq-tablet {
+    margin-top: 15px;
+  }
+
+  @include mq-desktop {
+    display: none;
+  }
+
+  &:hover .button-toogle__img-open,
+  &:hover .button-toogle__img-close {
+    fill: $base-color;
+  }
+
+  &:active .button-toogle__img-open,
+  &:active .button-toogle__img-open {
+    fill: rgba($base-color, 0.3);
+  }
+}
+
+.button-toogle__img-open {
+  display: inline;
+  fill: $light-color;
+}
+
+.button-toogle__img-close {
+  display: none;
+  fill: $light-color;
+}
