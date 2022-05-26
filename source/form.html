@@ -20,7 +20,7 @@
 <body class="page__body">
 
   <!-- Header -->
-  <header class="main-header">
+  <header class="main-header main-header--no-js">
     <div class="main-header__container container">
       <nav class="main-header__navigation">
         <a class="main-header__logo logo" href="index.html">
@@ -61,20 +61,15 @@
           </li>
         </ul>
       </nav>
-      <button class="main-header__button-open button-open" type="button">
-        <svg class="button-open__image" width="50" height="24">
+      <button class="main-header__button-toogle button-toogle" type="button">
+        <svg class="button-toogle__img-open" width="50" height="24">
           <use xlink:href="img/sprite.svg#icon-burger"></use>
         </svg>
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <button class="main-header__button-close button-close" type="button">
-        <svg class="button-close__image" width="23" height="23">
+        <svg class="button-toogle__img-close" width="23" height="23">
           <use xlink:href="img/sprite.svg#icon-close"></use>
         </svg>
         <span class="visually-hidden">
-          Закрыть меню
+          Переключить состояние меню.
         </span>
       </button>
     </div>
@@ -98,12 +93,12 @@
       <!-- Form -->
     <section class="base">
       <h2 class="visually-hidden">
-        Форма обратной связи
+        Форма обратной связи.
       </h2>
       <form class="base__form form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__user fieldset fieldset--unbordered">
           <legend class="visually-hidden">
-            Ваши фамилия, имя и отчество
+            Ваши фамилия, имя и отчество.
           </legend>
           <ul class="form__user-list">
             <li class="form__user-item">
@@ -357,6 +352,6 @@
     </div>
   </div>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script-menu.js"></script>
 </body>
 </html>

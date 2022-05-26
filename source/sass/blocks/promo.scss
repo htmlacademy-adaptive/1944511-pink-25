@@ -14,13 +14,13 @@
   }
 
   @include mq-desktop {
-    background-image: url("../img/promo-desktop.png"), url("../img/bg-promo-desktop.jpg");
-    background-position: right bottom, center;
-    background-size: auto, cover;
+    background-image: url("../img/bg-promo-desktop.jpg");
+    background-position: center;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-desktop@2x.png"), url("../img/bg-promo-desktop@2x.jpg");
-      background-size: 1050px auto, cover;
+      background-image: url("../img/bg-promo-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 }
@@ -33,6 +33,15 @@
 
   @include mq-desktop {
     width: 940px;
+    background-image: url("../img/promo-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right -130px bottom, center;
+    background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 }
 

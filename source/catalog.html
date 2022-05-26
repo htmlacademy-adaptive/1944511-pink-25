@@ -20,7 +20,7 @@
 <body class="page__body">
 
   <!-- Header -->
-  <header class="main-header">
+  <header class="main-header main-header--no-js">
     <div class="main-header__container container">
       <nav class="main-header__navigation">
         <a class="main-header__logo logo" href="index.html">
@@ -61,19 +61,16 @@
           </li>
         </ul>
       </nav>
-      <button class="main-header__button-open button-open" type="button">
-        <svg class="button-open__image" width="50" height="24">
+      <button class="main-header__button-toogle button-toogle" type="button">
+        <svg class="button-toogle__img-open" width="50" height="24">
           <use xlink:href="img/sprite.svg#icon-burger"></use>
         </svg>
-        <span class="visually-hidden">
-            Открыть меню
-        </span>
-      </button>
-      <button class="main-header__button-close button-close" type="button">
-        <svg class="button-close__image" width="23" height="23">
+        <svg class="button-toogle__img-close" width="23" height="23">
           <use xlink:href="img/sprite.svg#icon-close"></use>
         </svg>
-        <span class="visually-hidden">Закрыть меню</span>
+        <span class="visually-hidden">
+          Переключить состояние меню.
+        </span>
       </button>
     </div>
   </header>
@@ -95,10 +92,10 @@
 
     <!-- Catalog -->
     <section class="catalog">
-      <h2 class="visually-hidden">Каталог фотографий с комментариями</h2>
+      <h2 class="visually-hidden">Каталог фотографий с комментариями.</h2>
       <article class="catalog__lead card card--base">
         <h3 class="visually-hidden">
-          Пост 1
+          Пост 1.
         </h3>
         <a class="card__link" href="#">
           <picture>
@@ -145,7 +142,7 @@
       <ul class="catalog__list container">
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 2</h3>
+            <h3 class="visually-hidden">Пост 2.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/avto-desktop.webp 1x, img/avto-desktop@2x.webp 2x">
@@ -188,7 +185,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 3</h3>
+            <h3 class="visually-hidden">Пост 3.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/drum-desktop.webp 1x, img/drum-desktop@2x.webp 2x">
@@ -231,7 +228,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 4</h3>
+            <h3 class="visually-hidden">Пост 4.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/window-desktop.webp 1x, img/window-desktop@2x.webp 2x">
@@ -274,7 +271,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 5</h3>
+            <h3 class="visually-hidden">Пост 5.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/kuban-desktop.webp 1x, img/kuban-desktop@2x.webp 2x">
@@ -317,7 +314,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 6</h3>
+            <h3 class="visually-hidden">Пост 6.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/peak-desktop.webp 1x, img/peak-desktop@2x.webp 2x">
@@ -360,7 +357,7 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__article card">
-            <h3 class="visually-hidden">Пост 7</h3>
+            <h3 class="visually-hidden">Пост 7.</h3>
             <a class="card__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/air-desktop.webp 1x, img/air-desktop@2x.webp 2x">
@@ -407,7 +404,7 @@
     <!-- Post -->
     <section class="post">
       <h2 class="visually-hidden">
-        Запостить ваше фото
+        Запостить ваше фото.
       </h2>
       <p class="post__slogan">
         Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
@@ -529,6 +526,6 @@
     </span>
   </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script-menu.js"></script>
 </body>
 </html>
