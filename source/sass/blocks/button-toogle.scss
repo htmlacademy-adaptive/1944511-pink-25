@@ -20,7 +20,7 @@
   }
 
   &:active .button-toogle__img-open,
-  &:active .button-toogle__img-open {
+  &:active .button-toogle__img-close {
     fill: rgba($base-color, 0.3);
   }
 }
@@ -32,5 +32,6 @@
 
 .button-toogle__img-close {
   display: none;
+  margin-left: 26px;
   fill: $light-color;
 }

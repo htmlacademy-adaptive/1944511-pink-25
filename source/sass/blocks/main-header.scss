@@ -4,12 +4,12 @@
   left: 0;
   z-index: 5;
   width: 100%;
-  padding: 20px 0;
+  padding: 22px 0;
   background-color: rgba($dark-color, 0.3);
 
   @include mq-tablet {
     padding-top: 27px;
-    padding-bottom: 39px;
+    padding-bottom: 40px;
   }
 
   @include mq-desktop {
@@ -17,7 +17,7 @@
     padding-bottom: 40px;
   }
 
-  &--active,
+  &--menu-active,
   &--no-js {
     background-color: $middle-color;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -27,10 +27,28 @@
       box-shadow: none;
     }
   }
+
+  &--no-js {
+    position: static;
+    padding: 0;
+
+    @include mq-desktop {
+      position: absolute;
+      padding-top: 21px;
+      padding-bottom: 40px;
+    }
+  }
 }
 
-.main-header--menu-active .button-toogle__img-open,
-.main-header--no-js .button-toogle__img-open {
+.main-header--no-js .container {
+  width: 100%;
+
+  @include mq-desktop {
+    width: 940px;
+  }
+}
+
+.main-header--menu-active .button-toogle__img-open {
   display: none;
 }
 
@@ -38,12 +56,11 @@
   display: inline;
 }
 
-.main-header--no-js .button-toogle__img-close {
+.main-header--no-js .button-toogle {
   display: none;
 }
 
-.main-header--active .main-header__menu,
-.main-header--no-js .main-header__menu {
+.main-header--menu-active .main-header__menu {
   display: block;
 
   @include mq-desktop {
@@ -51,7 +68,35 @@
   }
 }
 
-.main-header--active .main-menu__item,
+.main-header--no-js .main-header__logo {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+
+  @include mq-tablet {
+    width: 620px;
+    padding-top: 27px;
+    padding-bottom: 39px;
+  }
+
+  @include mq-desktop {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-header--no-js .main-header__menu {
+  position: static;
+  display: block;
+
+  @include mq-desktop {
+    display: flex;
+  }
+}
+
+.main-header--menu-active .main-menu__item,
 .main-header--no-js .main-menu__item {
   background-color: $middle-color;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -65,6 +110,10 @@
 .main-header__container {
   display: flex;
   align-items: center;
+}
+
+.main-header--no-js .main-header__container {
+  display: block;
 }
 
 .main-header__navigation {

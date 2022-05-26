@@ -41,7 +41,12 @@
 }
 
 .map picture {
+  display: none;
   width: 100%;
+}
+
+.map--no-js picture {
+  display: block;
 }
 
 .map__img {
